@@ -1,0 +1,305 @@
+% Math and Physical Sciences Numbered Reference Style 
+\documentclass[pdflatex,sn-mathphys-num]{sn-jnl}
+
+%\usepackage[colorlinks=true,linkcolor=blue,citecolor=blue]{hyperref}
+\usepackage{graphicx}%
+\usepackage{multirow}%
+\usepackage{amsmath,amssymb,amsfonts}%
+\usepackage{amsthm}%
+\usepackage{mathrsfs}%
+\usepackage[title]{appendix}%
+\usepackage{xcolor}%
+\usepackage{textcomp}%
+\usepackage{manyfoot}%
+\usepackage{booktabs}%
+\usepackage{algorithm}%
+\usepackage{algorithmicx}%
+\usepackage{algpseudocode}%
+\usepackage{listings}%
+\usepackage{lmodern}%
+\usepackage{anyfontsize}%
+%%%%
+
+% Make Orcid icon
+\newcommand{\orcidicon}{\includegraphics[width=0.32cm]{orcid.pdf}}
+\newcommand{\orc}[1]{\href{https://orcid.org/#1}{\orcidicon}}
+
+% Author Orcid ID: Define per author
+\newcommand{\orcJR}{0000-0001-8217-1484} % J. Rafelski
+%\newcommand{\orcCTY}{0000-0001-5038-8427} % C. T. Yang
+\newcommand{\orcAJS}{0000-0001-5474-2649} % A. Steinmetz
+%\newcommand{\orcMF}{0000-0003-2704-6474} % M. Formanek
+%\newcommand{\orcJB}{0000-0002-2289-4856} % J. Birrell
+%\newcommand{\orcSE}{0000-0001-5884-5047} % S. Evans
+
+% Useful macros for equations and units in HEP
+\newcommand*{\TeV}{\text{ TeV}}
+\newcommand*{\GeV}{\text{ GeV}}
+\newcommand*{\MeV}{\text{ MeV}}
+\newcommand*{\keV}{\text{ keV}}
+\newcommand*{\eV}{\text{ eV}}
+\newcommand*{\meV}{\text{ meV}}
+\newcommand*{\bb}{\boldsymbol}
+\newcommand{\req}[1]{Eq.\,(\ref{#1})}
+\newcommand{\rf}[1]{Fig.~{\ref{#1}}}
+\newcommand{\rt}[1]{Table~{\ref{#1}}}
+\newcommand{\rsec}[1]{Sect.\,{\ref{#1}}}
+
+% Struts for table spacing
+\newcommand\Tstrut{\rule{0pt}{2.6ex}} % top strut
+\newcommand\Bstrut{\rule[-0.9ex]{0pt}{0pt}} % bottom strut
+\newcommand{\TBstrut}{\Tstrut\Bstrut} % top&bottom struts
+
+% Useful macros for annotation
+\newcommand*{\AJS}[1]{{\color{red} AJS: #1}}
+\newcommand*{\JR}[1]{{\color{blue} JR: #1}}
+\newcommand*{\rcite}{{\xred\,[Cite!]}}
+
+\raggedbottom
+%%\unnumbered% uncomment this for unnumbered level heads
+
+\begin{document}
+
+%\title[Magnetized primordial quark-gluon plasma]{Magnetized primordial quark-gluon plasma}
+\title[Short note on spin magnetization in primordial QGP]{Short note on spin magnetization in primordial quark-gluon plasma}
+
+\author[1]{\fnm{Andrew} \sur{Steinmetz\orc{\orcAJS}}}\email{ajsteinmetz@arizona.edu}
+
+\author[1]{\fnm{Johann} \sur{Rafelski\orc{\orcJR}}}\email{johannr@arizona.edu}
+
+\affil[1]{\orgdiv{Department of Physics}, \orgname{The University of Arizona}, \orgaddress{\city{Tucson}, \postcode{85721}, \state{AZ}, \country{USA}}}
+
+\abstract{
+We outline the theory of spin magnetization of the primordial quark-gluon plasma (QGP) that existed shortly after the Big Bang, focusing on a magnetized fermion gas of light quarks and electrons within temperatures of \(150\) MeV to \(500\) MeV. Using a grand partition function approach and evaluating magnetized Fermi-Dirac integrals, we calculate the magnetization and estimate that a fully polarized up quark gas could generate cosmic magnetic fields of approximately \(1.4 \times 10^{14}\) Tesla. This field strength is significantly larger than the critical Schwinger field and exceeds magnetar surface fields by over three orders of magnitude. This suggest that even a weakly polarized quark gas would have a profound impact on the early Universe.
+}
+
+\keywords{quark-gluon plasma, magnetism, magnetic moment, primordial Universe}
+
+\maketitle
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Introduction}
+\label{sec:introduction}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Quark-gluon plasma (QGP) is a state of matter that existed microseconds after the Big Bang, where quarks and gluons were not confined within hadrons but existed as a free deconfined plasma~\cite{Letessier:2002ony,Rafelski:2015cxa,Rafelski:2023emw,Rafelski:2024fej,Shuryak:2004cy,HotQCD:2014kol}. Understanding the properties of QGP is crucial for determining the conditions of the primordial Universe and the formation of matter as we observe it today~\cite{Uzan:2010pm,Uzan:2024ded,Grasso:2000wj,Widrow:2002ud,Kandus:2010nw}.
+
+If the incredibly dense gas of up \((u)\) quarks (the most magnetically relevant particle in QGP) was fully polarized during this era at a temperature of \(150\) MeV shortly prior to hadronization, this would correspond to an estimated cosmic magnetic strength \(M = \mathcal{M}/V\) of
+
+\begin{align}
+    M=\frac{\mathcal{M}}{V} = \mu_{u}n_{u} \sim 1.4\times10^{14}\ \mathrm{T}
+\end{align}
+
+where \(\mathcal{M}\) is the magnetization, \(\mu_{u}\) is the up quark magneton, and \(n_{u}\) is the up quark number density. This can also be understood as \(\approx3.2\times10^{4}\) the critical magnetic field strength \(\mathcal{B}\equiv m_{e}^{2}/e\) and over \(10^3\) stronger than the upper estimated surface field strengths of magnetars.
+
+In~\cite{Steinmetz:2023nsc,Steinmetz:2023ucp}, we explored the magnetic properties of the magnetized electron-positron plasma around the period of Big Bang Nucleosynthesis. We expand those efforts to now consider the magnetization of QGP where both density of magnetic particles and the external fields are greatly increased as we consider temperatures upward of $500\MeV$. We aim to understand how magnetic dipole moments impact the chemical potentials of quarks and evaluate the overall magnetization of the primordial Universe QGP.
+
+In this work, we explore the thermodynamic properties of a magnetized QGP in the primordial Universe, focusing on the interplay between quarks, leptons, and magnetic fields. The presence of strong magnetic fields in the primordial Universe could have significantly affected the equilibrium properties of Standard Model particles in the earliest moments after the Big Bang~\cite{Durrer:2013pga,Subramanian:2015lua}. Such magnetic fields have long been thought to be connected to baryon asymmetry~\cite{Vachaspati:1991nm,Baym:1995fk}. The connection between magnetism QGP chirality has been studied in~\cite{Fukushima:2008xe,Boyarsky:2011uy,Bali:2011qj}.
+
+For relativistic species~\cite{Elze:1980er}, under conditions of thermal and chemical equilibrium---as was the case in the primordial Universe---the chemical potential of each particle is opposite in sign to that of its antiparticle
+\begin{align}
+    \eta_{q}=T\ln\lambda_{q}\,,\qquad
+    \lambda_{q}=1/\lambda_{\bar{q}}\,,\qquad
+    \eta_{q}=-\eta_{\bar{q}}\,.
+\end{align}
+During this period, particle-antiparticle pairs of quarks and antiquarks were freely produced and annihilated through photon-mediated processes, represented by $q+\bar{q}\rightleftharpoons2\gamma$. Since the Universe expanded very slowly compared to collision reaction times during the QGP epoch~\cite{Rafelski:2023emw,Yang:2024ret}, the expansion can be considered adiabatic, conserving entropy. Therefore, the light-quark gas we consider is in full thermal equilibrium.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Magnetization of a polarized gas}
+\label{sec:magnetization}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+We consider a free but magnetized fermion gas in the temperature range $500\MeV>T>150\MeV$ composed of light-quark species $q \in {u,d,s}$. As the quark magneton scales with $\mu_{q} \sim Q_q/2m_q$, these species are magnetically the most relevant due to their lighter masses $m_q$ and consequently larger magnetic moments.
+
+\begin{table}[h]
+\centering
+\caption{Properties of selected particles}
+\label{tab:particle_properties}
+\begin{tabular}{@{}lll@{}}
+\toprule
+\textbf{Particle} & \textbf{Mass} \([\approx\mathrm{MeV}]\) & \textbf{Magneton} \([\mu_{f}/\mu_{B}]\) \\ \midrule
+Up \((u)\) & 2.2 & \(1.55\times10^{-1}\) \\
+Down \((d)\) & 4.7 & \(3.62\times10^{-2}\) \\
+Strange \((s)\) & 96 & \(1.77\times10^{-3}\) \\
+Electron \((e)\) & 0.511 & \( 1 \) \\ \bottomrule
+\end{tabular}
+\end{table}
+
+Here, $Q_q$ denotes the electric charges of the light quarks, taking values $Q_q \in {\pm \tfrac{1}{3}, \pm \tfrac{2}{3}}$. Therefore in accounting for the internal energy $E$ of QGP, the energies of the electrons and neutrinos must also be included to fully determine the QGP state. We take into account the following properties: 
+\begin{itemize}[nosep]
+    \item [(a)] The energy of adding or removing a baryon $\eta_{B}B$,
+    \item [(b)] the energy of adding or removing a lepton $\eta_{\ell}(N_{\ell}-N_{\ell})$ with $\ell\in {e,\nu}$, 
+    \item [(c)] the magnetic energy $\mathcal{M}\mathcal{B}$ where $\mathcal{M}$ is the net magnetization and $\mathcal{B}$ is the magnetic field strength and
+    \item [(d)] the electromagnetic energy density generated by the external magnetic field.
+\end{itemize}
+Magnetic field strength $\mathcal{B}$ should not be confused with baryon number $B$. Additionally, the internal energy and chemical potential of QGP is sensitive to electric fields which cause a statistical Coulomb distortion~\cite{Sigl:1996dm,Letessier:2002ony}. For the purpose of clarity and to maintain focus on magnetism, electrical fields will be omitted.
+
+The dependency of $E$ on $\mathcal{M}$ reflects that $\mathcal{B}$ is the incremental energy cost to change the magnetization by flipping the spin of a particle~\cite{Bali:2014kia}. Therefore, this makes magnetization $\mathcal{M}$ an extensive property of the system which changes which particle number. We see this explicitly by writing the magnetization as the sum over all particles $i\in{1,\ldots,k}$
+\begin{align}
+    \label{eq:dipole}
+    \mathcal{M} = \sum_{i=1}^{k}(\mu_{i}N_{i}^{\uparrow} + \mu_{\bar{i}}N_{\bar{i}}^{\uparrow} - \mu_{i}N_{i}^{\downarrow} - \mu_{\bar{i}}N_{\bar{i}}^{\downarrow})\,,\qquad
+    N_{i} = N_{i}^{\uparrow} + N_{i}^{\downarrow}\,,
+\end{align}
+where $\mu_{i}$ is the magnetic dipole moment per particle $\mu_{i}\propto Q_{i}/m_{i}$. The $\uparrow\downarrow$ notation refers to spin-up $(\uparrow)$ and spin-down $(\downarrow)$ states along the direction of the external field. Therefore, $N_{i}^{\uparrow\downarrow}$ refers to the $i$-th constituent population number in either spin-up or spin-down orientation. The signs of each term in \req{eq:dipole} arises from the sign of the spin eigenvalue. While \req{eq:dipole} presumably includes contributions from each particle with a magnetic dipole, we expect the magnetization to be dominated by electrons, positrons, and the lightest quarks due to their charge and low mass therefore we sum over $i\in{u,d,s,e}$
+\begin{align}
+    \notag\mathcal{M} \approx &+|\mu_{u}|(N_{u}^{\uparrow}-N_{\bar{u}}^{\uparrow})-|\mu_{u}|(N_{u}^{\downarrow}-N_{\bar{u}}^{\downarrow})\\
+    \notag &-|\mu_{d}|(N_{d}^{\uparrow}-N_{\bar{d}}^{\uparrow})+|\mu_{d}|(N_{d}^{\downarrow}-N_{\bar{d}}^{\downarrow})\\
+    \notag &+|\mu_{s}|(N_{s}^{\uparrow}-N_{\bar{s}}^{\uparrow})-|\mu_{s}|(N_{s}^{\downarrow}-N_{\bar{s}}^{\downarrow})\\
+    \label{eq:dipole2}
+    &-|\mu_{e}|(N_{e}^{\uparrow}-N_{\bar{e}}^{\uparrow})+|\mu_{e}|(N_{e}^{\downarrow}-N_{\bar{e}}^{\downarrow})\,.
+\end{align}
+The magnetic dipole of a particle is opposite in sign to its antiparticle $\mu_{i}=-\mu_{\bar{i}}$ as charge is flipped. Any deviation from this condition would represent a violation of CPT~\cite{Colladay:1996iz,Bluhm:1997ci,BASE:2016yuo}. The magnetic moments of the relevant magnetic species are
+\begin{align}
+    \notag\mu_{u}&=+\frac{2}{3}\left|\frac{g_{u}}{2}\right|\frac{e\hbar}{2m_{u}}\,,&\qquad
+    \mu_{d}&=-\frac{1}{3}\left|\frac{g_{d}}{2}\right|\frac{e\hbar}{2m_{d}}\,,&\\
+    \label{eq:moments}
+    \mu_{s}&=+\frac{2}{3}\left|\frac{g_{s}}{2}\right|\frac{e\hbar}{2m_{s}}\,,&\qquad
+    \mu_{e}&=-1\left|\frac{g_{e}}{2}\right|\frac{e\hbar}{2m_{e}}\,,&
+\end{align}
+where $e=-Q_{e}$ is the value of elementary charge and $g_{i}$ the $g$-factor of the particle.
+
+We recognize that \req{eq:dipole2} contains terms representing asymmetry in the spin alignment though we can organize them in two different ways: (a) We group terms of the same spin alignment or (b) we group terms of matter and antimatter. The second approach may allow definition of spin-asymmetry in terms of conserved quantities. Therefore, we define net spin-asymmetry numbers $\delta_{i}^{\uparrow\downarrow}$ and write
+\begin{align}
+    \delta_{i}^{\uparrow\downarrow} &\equiv N_{i}^{\uparrow\downarrow}-N_{\bar{i}}^{\uparrow\downarrow}\,,\\
+    \mathcal{M} &= 
+    +|\mu_{u}|(\delta_{u}^{\uparrow}-\delta_{u}^{\downarrow})
+    -|\mu_{d}|(\delta_{d}^{\uparrow}-\delta_{d}^{\downarrow})
+    +|\mu_{s}|(\delta_{s}^{\uparrow}-\delta_{s}^{\downarrow})
+    -|\mu_{e}|(\delta_{e}^{\uparrow}-\delta_{e}^{\downarrow})\,.
+\end{align}
+The net spin-asymmetry warrants some discussion: It is the asymmetry of particles and antiparticles of the same spin. Therefore $\delta_{u}^{\uparrow}\neq0$ represents a situation where there are more up quarks than up antiquarks in the spin-up $\uparrow$ state.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Magnetized grand partition function}
+\label{sec:partition}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+The partition function allows us to calculate various thermodynamic quantities found in \req{eq:relations_conjugate} by taking appropriate derivatives of $\mathcal{F}$. In the temperature range considered $(500\MeV>T>150\MeV)$, the lightest quarks act as essentially massless particles with only the strange quark requiring significant mass corrections. It is worth remarking on the uniqueness of the situation: As magnetic moment scales inverse with mass, it is the particles which are most massless in character which contribute most to magnetization.
+
+The relevant contributions to the magnetized primordial plasma arise from the quarks, gluons, leptons, and the vacuum. The grand potential \req{eq:potential} can be recast in terms of the grand partition function $\ln\mathcal{Z}$
+\begin{align}
+    \label{eq:parts}
+    \mathcal{F} &= -T\ln\mathcal{Z}\,,\\
+    \ln\mathcal{Z}_{\mathrm{total}} &=
+    \ln\mathcal{Z}_{\mathrm{quarks}} +
+    \ln\mathcal{Z}_{\mathrm{gluons}} +
+    \ln\mathcal{Z}_{\mathrm{vac.}} + 
+    \ln\mathcal{Z}_{\mathrm{leptons}}+\ldots 
+\end{align}
+
+We consider a homogeneous magnetic field domain defined along the $z$-axis with magnetic field magnitude $\mathcal{B}$. The volume $V=L^{3}$ is not necessarily infinite and is to be considered the size of the homogeneous domain such that $\nabla\cdot\mathcal{B}\approx0$. For a fermion species $f$ of charge $Q$, mass $m$, and g-factor $g$, the energy eigenvalues of the magnetized particles is given by~\cite{Steinmetz:2018ryf}
+\begin{align}
+    \label{eq:energystates}
+    E(p_{z},n,s)=\sqrt{m^{2}+p_{z}^{2}+2|Q|\mathcal{B}\left(n+\frac{1}{2}-\frac{g}{2}s\right)}\,,
+\end{align}
+where $E$ are the relativistic Landau energy eigenvalues. The micro-state energies depend on spin $s\in\pm1/2$ and orbital Landau $n\in0,1,2,3,\ldots$ quantum number.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Magnetized Fermi-Dirac integrals}
+\label{sec:fermi_integrals}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+The power and utility of the partition function in statistical systems is found by examining the Fermi integral in various limits and expansions. We define the Fermi-Dirac distribution in the usual way noting that fugacity \(\lambda\) is related to chemical potential via \(\eta = T\ln\lambda\). Thus,
+\begin{align}
+    F\left(E - \sigma\eta\right) = \frac{1}{e^{(E - \sigma\eta)/T} + 1}\,.
+\end{align}
+We can further simplify \req{eq:partition3} by rewriting the partition function in spherical coordinates \(d\mathbf{p}^{3}=4\pi p^{2}dp\). We substitute coordinates and integrate by parts yielding
+\begin{align}
+    \label{eq:partition_byparts}
+    \ln\mathcal{Z} &= \frac{2 N_\mathrm{dof}V}{(2\pi)^{2}} \sum_{s}^{\pm1/2}\sum_{\sigma}^{\pm1}\int_{0}^{\infty} \frac{dp}{3T} \, \frac{p^4}{E}F\left(E - \sigma\eta\right)\,.
+\end{align}
+The form of the partition function expressed by \req{eq:partition_byparts} more directly lets us evaluate thermodynamic quantities in terms of Fermi integrals. However, integrating over momentum is not an ideal description as relativistic expansions in momentum yield series that are only semi-convergent; see \rsec{sec:mass}.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Dimensionless change of variables}
+\label{sec:dimensionless}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+To simplify the integration process, we introduce dimensionless variables by normalizing relevant physical quantities with the temperature \( T \). This approach renders the equations dimensionless and highlights the thermal contributions explicitly. The dimensionless variables are defined as
+\begin{align}
+    \label{eq:dimensionless_variables}
+    p_{T} = \frac{p}{T}, \qquad E_{T}(p_{T},s) = \frac{E(p,s)}{T}, \qquad \eta_{T} = \frac{\eta}{T}\,, \qquad m_{T}(s) = \frac{m(s)}{T}\,.
+\end{align}
+This defines momentum-like \(p_{T}\), energy-like \(E_{T}\), potential-like \(\eta_{T}\) and mass-like \(m_{T}\) parameters. Using the relativistic dispersion relation, the dimensionless energy \( E_{T} \) can be expressed in terms of the dimensionless momentum \( p_{T} \) and the dimensionless mass \( m_{T} \)
+\begin{align}
+E_{T} = \frac{E}{T} = \sqrt{p_{T}^{2} + m_{T}^{2}}\,.
+\end{align}
+The differential \( dp_{T} \) and \( dE_{T} \) transform as
+\begin{align}
+dp = T \, dp_{T}\,,\qquad p_{T}dp_{T} = E_{T} dE_{T}\,,
+\end{align}
+and the limits of integration change accordingly
+\begin{equation}
+p_{T} = 0 \quad \Rightarrow \quad E_{T} = m_{T}, \quad p_{T} \to \infty \quad \Rightarrow \quad E_{T} \to \infty.
+\end{equation}
+Substituting these dimensionless variables and differentials into the partition function \( \ln\mathcal{Z} \), we obtain expressions for both momentum-like \(p_{T}\) integration and energy-like \(E_{T}\) integration
+\begin{align}
+    \label{eq:dimensionless_partition}
+    \ln\mathcal{Z} 
+    &= \frac{2N_{\mathrm{dof}} V}{(2\pi)^{2}} \frac{T^{3}}{3} \sum_{s}^{\pm1/2}\sum_{\sigma}^{\pm1} \int_{0}^{\infty} dp_{T} \, \frac{p_{T}^{4}}{\sqrt{p_{T}^{2} + m_{T}^{2}}} \, F\left(\sqrt{p_{T}^{2} + m_{T}^{2}} - \sigma\eta_{T}\right)\,,\\
+    \label{eq:dimensionless_partition2}
+    &= \frac{2N_{\mathrm{dof}} V}{(2\pi)^{2}} \frac{T^{3}}{3} \sum_{s}^{\pm1/2}\sum_{\sigma}^{\pm1} \int_{m_{T}}^{\infty} dE_{T} \, (E_{T}^2-m_{T}^2)^{3/2} F\left(E_{T} - \sigma\eta_{T}\right)\,.
+\end{align}
+In this dimensionless formulation, it is evident that the logarithm of the partition function scales as \( \ln\mathcal{Z} \propto T^{3} \), consistent with the expected thermodynamic behavior for a relativistic gas in three spatial dimensions.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Evaluation of magnetization from the dimensionless partition function}
+\label{sec:magnetization_evaluation}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Here we evaluate the magnetization using a different approach to \rsec{sec:exact_mag} which provides greater clarity especially in high temperature systems. Given the dimensionless form of the partition function \req{eq:dimensionless_partition} from \rsec{sec:dimensionless}, we proceed to evaluate the magnetization \(\mathcal{M}\), acknowledging that the dimensionless mass \(m_{T}\) depends on the magnetic field \(\mathcal{B}\) via \req{eq:spinmass}. The magnetization is defined in \req{eq:magnetization_def}. 
+
+Since \(\ln\mathcal{Z}\) depends on \(\mathcal{B}\) solely through \(m_{T}\), we apply the chain rule
+\begin{align}
+    \label{eq:chain_rule}
+    \frac{\partial \ln\mathcal{Z}}{\partial \mathcal{B}} = \frac{\partial \ln\mathcal{Z}}{\partial m_{T}} \frac{\partial m_{T}}{\partial \mathcal{B}}\,,\qquad
+    2m_{T}\frac{\partial m_{T}}{\partial \mathcal{B}} = -\frac{g|Q|}{T^2}s\,.
+\end{align}
+Taking the derivative with respect to \(m_{T}\), we write
+\begin{equation}
+\frac{\partial \ln \mathcal{Z}}{\partial m_{T}} = \frac{2 N_{\mathrm{dof}} V T^{3}}{3 (2\pi)^{2}} \sum_{s}^{\pm1/2}\sum_{\sigma}^{\pm1} \int_{0}^{\infty} dp_{T} \, \frac{\partial}{\partial m_{T}} \left( \frac{p_{T}^{4}}{\sqrt{p_{T}^{2} + m_{T}^{2}}} F\left(\sqrt{p_{T}^{2} + m_{T}^{2}} - \sigma \eta_{T} \right) \right).
+\end{equation}
+Given that \(E_{T} = \sqrt{p_{T}^{2} + m_{T}^{2}}\), then, \(\partial E_{T} / \partial m_{T} = m_{T} / E_{T}\). The derivative of the integrand is computed using the product and chain rules
+\begin{equation}
+\frac{\partial}{\partial m_{T}} \left( \frac{p_{T}^{4}}{E_{T}} F(E_{T} - \sigma\eta_{T}) \right) = \frac{p_{T}^{4}}{E_{T}} \frac{\partial F}{\partial E_{T}} \frac{\partial E_{T}}{\partial m_{T}} + F(E_{T} - \sigma\eta_{T}) \frac{\partial}{\partial m_{T}} \left( \frac{p_{T}^{4}}{E_{T}} \right).
+\end{equation}
+The second term involves
+\begin{equation}
+\frac{\partial}{\partial m_{T}} \left( \frac{p_{T}^{4}}{E_{T}} \right) = -\frac{p_{T}^{4} m_{T}}{E_{T}^{3}}.
+\end{equation}
+Substituting these results back, the integrand becomes
+\begin{equation}
+\frac{\partial}{\partial m_{T}} \left( \frac{p_{T}^{4}}{E_{T}} F(E_{T} - \sigma\eta_{T}) \right) = \frac{p_{T}^{4} m_{T}}{E_{T}^{2}} F'(E_{T} - \sigma\eta_{T}) - \frac{p_{T}^{4} m_{T}}{E_{T}^{3}} F(E_{T} - \sigma\eta_{T}).
+\end{equation}
+Replacing \(E_{T}\) with \(\sqrt{y^{2} + m_{T}^{2}}\), the derivative of \(\ln \mathcal{Z}\) is
+\begin{align}
+    \notag
+    \frac{\partial \ln \mathcal{Z}}{\partial m_{T}} &= \frac{2 N_{\mathrm{dof}} V T^{3}}{3 (2\pi)^{2}} \sum_{s}^{\pm1/2}\sum_{\sigma}^{\pm1} \int_{0}^{\infty} dp_{T} \, p_{T}^{4} m_{T}\\
+    &\times\left( \frac{F'\left( \sqrt{p_{T}^{2} + m_{T}^{2}} - \sigma\eta_{T} \right)}{p_{T}^{2} + m_{T}^{2}} - \frac{F\left( \sqrt{p_{T}^{2} + m_{T}^{2}} - \sigma\eta_{T} \right)}{(p_{T}^{2} + m_{T}^{2})^{3/2}} \right).
+\end{align}
+This result provides the explicit form of \(\partial \ln \mathcal{Z}/\partial m_{T}\) in terms of \(F\) and its derivative \(F'\), with all dependencies on \(m_{T}\) and \(p_{T}\) made explicit.
+
+Given that \( F(x) = \frac{1}{e^{x} + 1} \) is the Fermi-Dirac distribution, its derivative is
+\begin{equation}
+F'(x) = \frac{dF}{dx} = -\frac{e^{x}}{(e^{x} + 1)^2} = -F(x)\left[1 - F(x)\right].
+\end{equation}
+Substituting \( F'(x) \) into the expression for the derivative of the integrand
+\begin{align}
+    \notag
+    &\int_{0}^{\infty} dp_{T} \, p_{T}^{4} m_{T} \left( -\frac{F(E_{T} - \sigma\eta_{T})\left[1 - F(E_{T} - \sigma\eta_{T})\right]}{E_{T}^{2}} - \frac{F(E_{T} - \sigma\eta_{T})}{E_{T}^{3}} \right) =\\*
+    &\int_{m_{T}}^{\infty} dE_{T} \, \left(E_{T}^{2} - m_{T}^{2}\right)^{3/2} m_{T} \left( -\frac{F(E_{T} - \sigma\eta_{T})\left[1 - F(E_{T} - \sigma\eta_{T})\right]}{E_{T}} - \frac{F(E_{T} - \sigma\eta_{T})}{E_{T}^{2}} \right).
+\end{align}
+Substituting the transformed integral into the derivative of \(\ln \mathcal{Z}\), we obtain:
+\begin{align}
+    \frac{\partial \ln \mathcal{Z}}{\partial m_{T}} &= -\frac{2 N_{\mathrm{dof}} V T^{3}}{3 (2\pi)^{2}} \sum_{s}^{\pm1/2}\sum_{\sigma}^{\pm1} \int_{m_{T}}^{\infty} dE_{T} \, m_{T}\left(E_{T}^{2} - m_{T}^{2}\right)^{3/2}\\
+    &\times\left[ \frac{F(E_{T} - \sigma\eta_{T})\left(1 - F(E_{T} - \sigma\eta_{T})\right)}{E_{T}} + \frac{F(E_{T} - \sigma\eta_{T})}{E_{T}^{2}} \right].
+\end{align}
+
+Substituting the expression for \(\partial \ln \mathcal{Z}/\partial m_{T}\) into \req{eq:magnetization_def} and \req{eq:chain_rule}, we obtain the magnetization \(\mathcal{M}\)
+\begin{align}
+    \label{eq:mag_form}
+    \mathcal{M} &= -\frac{g|Q|}{2 T}\cdot\frac{2 N_{\mathrm{dof}} V T^{3}}{3 (2\pi)^{2}} \sum_{s}^{\pm1/2} s \sum_{\sigma}^{\pm1} \int_{m_{T}(s)}^{\infty} dE_{T} \, \left(E_{T}^{2} - m_{T}^{2}(s)\right)^{3/2} \\*
+    &\times\left[ \frac{F(E_{T} - \sigma\eta_{T})\left(1 - F(E_{T} - \sigma\eta_{T})\right)}{E_{T}} + \frac{F(E_{T} - \sigma\eta_{T})}{E_{T}^{2}} \right].
+\end{align}
+This expression is equivalent to the lowest order term in \req{eq:Euler_Maclaurin_Magnetization}. Much how we expected the free energy to be \(\ln\mathcal{Z}\sim T^{3}\), we see the magnetization is \(\mathcal{M}\sim T^{2}\) via dimensional analysis. This is in agreement to our prior work~\cite{Steinmetz:2023nsc,Steinmetz:2023ucp,Rafelski:2024fej} where we evaluated the magnetization in the Boltzmann limit. The benefit of expressing the magnetization in the form of \req{eq:mag_form} is that the integrand within the brackets \([\ldots]\) entirely contains the Fermi-Dirac distribution scaled by energy without mass (or magnetic fields) except as a boundary condition on the integration.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\bibliographystyle{unsrtnat}
+\bibliography{short-note-qcd}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\end{document}
