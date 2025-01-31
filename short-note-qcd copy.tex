@@ -1,135 +1,101 @@
-%%%%%%%%%%%%%%%%%%%%%%%%
+% Math and Physical Sciences Numbered Reference Style 
 \documentclass[epjST]{svjour}
 
-\voffset -0.7cm
-\hoffset -0.7cm
-\usepackage{amsmath,amssymb,bbm}
-\usepackage{float}
-\usepackage{imakeidx}
-\usepackage[colorlinks=true,linkcolor=blue,citecolor=blue,urlcolor=magenta]{hyperref}
-\usepackage{footnote,comment}
-\usepackage{doi}
-\usepackage{enumitem}
-\usepackage{slashed}
-\usepackage{xcolor,xstring,xparse}
-\usepackage{graphicx}
-\usepackage{rotating}
-\usepackage{pdflscape}
-\usepackage{aastex_hack}
-\usepackage{appendix}
-\usepackage{booktabs}
-
-\makesavenoteenv{tabular}
-\makesavenoteenv{table}
-\makesavenoteenv{figure}
+%\usepackage[colorlinks=true,linkcolor=blue,citecolor=blue]{hyperref}
+\usepackage{graphicx}%
+\usepackage{multirow}%
+\usepackage{amsmath,amssymb,amsfonts}%
+\usepackage{amsthm}%
+\usepackage{mathrsfs}%
+\usepackage[title]{appendix}%
+\usepackage{xcolor}%
+\usepackage{textcomp}%
+\usepackage{manyfoot}%
+\usepackage{booktabs}%
+\usepackage{algorithm}%
+\usepackage{algorithmicx}%
+\usepackage{algpseudocode}%
+\usepackage{listings}%
+\usepackage{lmodern}%
+\usepackage{anyfontsize}%
+%%%%
 
 % Make Orcid icon
 \newcommand{\orcidicon}{\includegraphics[width=0.32cm]{orcid.pdf}}
 \newcommand{\orc}[1]{\href{https://orcid.org/#1}{\orcidicon}}
 
 % Author Orcid ID: Define per author
-\newcommand{\orcJR}{0000-0001-8217-1484}
-\newcommand{\orcCTY}{0000-0001-5038-8427}
-\newcommand{\orcAJS}{0000-0001-5474-2649}
-\newcommand{\orcMF}{0000-0003-2704-6474}
-\newcommand{\orcJB}{0000-0002-2289-4856}
-\newcommand{\orcSE}{0000-0001-5884-5047}
-\newcommand{\orcCG}{0000-0001-9985-1822}
-\newcommand{\orcWP}{0000-0003-0793-3041}
-\newcommand{\orcLL}{0000-0002-1478-5254}
+\newcommand{\orcJR}{0000-0001-8217-1484} % J. Rafelski
+%\newcommand{\orcCTY}{0000-0001-5038-8427} % C. T. Yang
+\newcommand{\orcAJS}{0000-0001-5474-2649} % A. Steinmetz
+%\newcommand{\orcMF}{0000-0003-2704-6474} % M. Formanek
+%\newcommand{\orcJB}{0000-0002-2289-4856} % J. Birrell
+%\newcommand{\orcSE}{0000-0001-5884-5047} % S. Evans
 
-% Useful macros for equations and units
-\newcommand{\ts}{\textstyle}
-\newcommand*{\TeV}{\text{\,TeV}}
-\newcommand*{\GeV}{\text{\,GeV}}
-\newcommand*{\MeV}{\text{\,MeV}}
-\newcommand*{\keV}{\text{\,keV}}
-\newcommand*{\eV}{\text{\,eV}}
-\newcommand*{\meV}{\text{\,meV}}
-\newcommand*{\Msun}{\mathrm{M}_{\odot}}
+% Useful macros for equations and units in HEP
+\newcommand*{\TeV}{\text{ TeV}}
+\newcommand*{\GeV}{\text{ GeV}}
+\newcommand*{\MeV}{\text{ MeV}}
+\newcommand*{\keV}{\text{ keV}}
+\newcommand*{\eV}{\text{ eV}}
+\newcommand*{\meV}{\text{ meV}}
 \newcommand*{\bb}{\boldsymbol}
-\newcommand*{\beqn}{\begin{equation}}
-\newcommand*{\eeqn}{\end{equation}}
-\newcommand{\beql}[1]{\begin{equation} \label{#1}}
-\newcommand{\eeql}[1]{\label{#1} \end{equation} }  
 \newcommand{\req}[1]{Eq.\,(\ref{#1})}
-\newcommand{\rf}[1]{Fig.\,{\ref{#1}}}
+\newcommand{\rf}[1]{Fig.~{\ref{#1}}}
 \newcommand{\rt}[1]{Table~{\ref{#1}}}
-\newcommand{\rsec}[1]{Sec.\,{\ref{#1}}}
-\newcommand{\rchap}[1]{Ch.\,{\ref{#1}}}
-\newcommand{\rapp}[1]{Appendix~{\ref{#1}}}
-\newcommand{\mydoi}[2]{\href{http://dx.doi.org/#2}{#1}}
-\newcommand{\E}{\mathrm{e}}
-\newcommand{\ie}{{\em i.e.\/}}  
-\newcommand{\eg}{{\em e.g.\/}}  
-\newcommand{\ms}[1]{\rule[-#1mm]{0mm}{0mm}}
-\newcommand{\grad}{\operatorname{grad}}
-\newcommand{\diag}{\mathrm{diag}}
+\newcommand{\rsec}[1]{Sect.\,{\ref{#1}}}
 
-% Andrew's commands
-\newcommand{\cccite}[1]{Published in Ref.~\cite{#1} under the \href{https://creativecommons.org/licenses/by/4.0/}{CC BY 4.0} license}
-\newcommand{\radapt}[1]{Adapted from Ref.~\cite{#1}}
-\newcommand{\para}[1]{\paragraph{#1}\hfill\break\noindent}
-\NewDocumentCommand{\allcite}{m o}{\nocite{#1}\hyperlink{cite.#1}{\StrBefore{#1}{:}\IfNoValueTF{#2}{ et. al. }{ and #2 }(\StrBehind{#1}{:}[\temp]\StrLeft{\temp}{4})}}
-\NewDocumentCommand{\aucite}{m o}{\nocite{#1}\hyperlink{cite.#1}{\StrBefore{#1}{:}\IfNoValueTF{#2}{ }{ and #2 }(\StrBehind{#1}{:}[\temp]\StrLeft{\temp}{4})}}
-\NewDocumentCommand{\allcitep}{m o}{\nocite{#1}\hyperlink{cite.#1}{\StrBefore{#1}{:}\IfNoValueTF{#2}{ et. al. }{ and #2 }(preprint \StrBehind{#1}{:}[\temp]\StrLeft{\temp}{4})}}
+% Struts for table spacing
+\newcommand\Tstrut{\rule{0pt}{2.6ex}} % top strut
+\newcommand\Bstrut{\rule[-0.9ex]{0pt}{0pt}} % bottom strut
+\newcommand{\TBstrut}{\Tstrut\Bstrut} % top&bottom struts
 
 % Useful macros for annotation
-\newcommand*{\xred}{\color{red}}
-\newcommand*{\xblue}{\color{blue}}
-\newcommand*{\xgreen}{\color{green}}
+\newcommand*{\AJS}[1]{{\color{red} AJS: #1}}
+\newcommand*{\JR}[1]{{\color{blue} JR: #1}}
+\newcommand*{\rcite}{{\xred\,[Cite!]}}
 
-% Struts for tables 
-\newcommand\Tstrut{\rule{0pt}{2.6ex}}
-\newcommand\Bstrut{\rule[-0.9ex]{0pt}{0pt}}
-\newcommand{\TBstrut}{\Tstrut\Bstrut}
-
-% Equations numbered by section
-\numberwithin{equation}{section}
+\raggedbottom
+%%\unnumbered% uncomment this for unnumbered level heads
 
 \begin{document}
 
-\title{Short note on spin magnetization in quark-gluon plasma
-    }
+%\title[Magnetized primordial quark-gluon plasma]{Magnetized primordial quark-gluon plasma}
+\title[Short note on spin magnetization in primordial QGP]{Short note on spin magnetization in primordial quark-gluon plasma}
 
-\author{
-    Andrew~Steinmetz${}^1$\orc{\orcAJS},
-    Johann~Rafelski${}^1$\orc{\orcJR}
-    }
+\author[1]{\fnm{Andrew} \sur{Steinmetz\orc{\orcAJS}}}\email{ajsteinmetz@arizona.edu}
 
-\institute{
-    ${}^1$Department of Physics, The University of Arizona, Tucson, AZ, 85721, USA\\
-    }
+\author[1]{\fnm{Johann} \sur{Rafelski\orc{\orcJR}}}\email{johannr@arizona.edu}
+
+\affil[1]{\orgdiv{Department of Physics}, \orgname{The University of Arizona}, \orgaddress{\city{Tucson}, \postcode{85721}, \state{AZ}, \country{USA}}}
 
 \abstract{
-    We outline the theory of spin magnetization of the primordial quark-gluon plasma (QGP) that existed shortly after the Big Bang, focusing on a magnetized fermion gas of light quarks and electrons within temperatures of \(150\) MeV to \(500\) MeV. Using a grand partition function approach and evaluating magnetized Fermi-Dirac integrals, we calculate the magnetization and estimate that a fully polarized up quark gas could generate cosmic magnetic fields of approximately \(1.4 \times 10^{14}\) Tesla. This field strength is significantly larger than the critical Schwinger field and exceeds magnetar surface fields by over three orders of magnitude. This suggest that even a weakly polarized quark gas would have a profound impact on the early Universe.
-    }
+We outline the theory of spin magnetization of the primordial quark-gluon plasma (QGP) that existed shortly after the Big Bang, focusing on a magnetized fermion gas of light quarks and electrons within temperatures of \(150\) MeV to \(500\) MeV. Using a grand partition function approach and evaluating magnetized Fermi-Dirac integrals, we calculate the magnetization and estimate that a fully polarized up quark gas could generate cosmic magnetic fields of approximately \(1.4 \times 10^{14}\) Tesla. This field strength is significantly larger than the critical Schwinger field and exceeds magnetar surface fields by over three orders of magnitude. This suggest that even a weakly polarized quark gas would have a profound impact on the early Universe.
+}
+
+\keywords{quark-gluon plasma, magnetism, magnetic moment, primordial Universe}
 
 \maketitle
-%%%%%%%%%%%%%%%%%%%%%%%%
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Introduction}
 \label{sec:introduction}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 Quark-gluon plasma (QGP) is a state of matter that existed microseconds after the Big Bang, where quarks and gluons were not confined within hadrons but existed as a free deconfined plasma~\cite{Letessier:2002ony,Rafelski:2015cxa,Rafelski:2023emw,Rafelski:2024fej,Shuryak:2004cy,HotQCD:2014kol}. Understanding the properties of QGP is crucial for determining the conditions of the primordial Universe and the formation of matter as we observe it today~\cite{Uzan:2010pm,Uzan:2024ded,Grasso:2000wj,Widrow:2002ud,Kandus:2010nw}.
+
 \begin{table}[h]
 \centering
-\caption{Properties of select particles}
+\caption{Properties of selected particles}
 \label{tab:particle_properties}
-\begin{tabular}{@{}lllll@{}}
+\begin{tabular}{@{}lll@{}}
 \toprule
-\textbf{Particle} & \textbf{Mass} \([\approx\mathrm{MeV}]\) & \textbf{Charge} & \textbf{Magneton} \([\mu/\mu_{B}]\) & \textbf{dof.} \\ 
-\midrule
-Electron    \((e)\) & 0.511 & \(-1\)    & \(-1\)         & 2 \\
-Up          \((u)\) & 2.2   & \(+2/3\)  & \(+0.155\)     & 6 \\
-Down        \((d)\) & 4.7   & \(-1/3\)  & \(-0.0362\)    & 6 \\
-Strange     \((s)\) & 96    & \(-1/3\)  & \(-0.00177\)   & 6 \\
-Charm       \((c)\) & 1270  & \(+2/3\)  & \(+0.000268\)  & 6 \\ 
-\bottomrule
+\textbf{Particle} & \textbf{Mass} \([\approx\mathrm{MeV}]\) & \textbf{Magneton} \([\mu_{f}/\mu_{B}]\) \\ \midrule
+Up \((u)\) & 2.2 & \(1.55\times10^{-1}\) \\
+Down \((d)\) & 4.7 & \(3.62\times10^{-2}\) \\
+Strange \((s)\) & 96 & \(1.77\times10^{-3}\) \\
+Electron \((e)\) & 0.511 & \( 1 \) \\ \bottomrule
 \end{tabular}
 \end{table}
-In Table.~\ref{tab:particle_properties}, we list the properties of select particles relevant to the QGP era. The magneton \(\mu\) is the magnetic moment of the particle in units of the Bohr magneton \(\mu_{B}\). The number of degrees of freedom \(\mathrm{dof.}\) is the number of spin and color states available to the particle. The magneton is a measure of the strength of the magnetic dipole moment of a particle where \(g\)-factor has been set to \(g=2\).
 
 If the incredibly dense gas of up \((u)\) quarks (the most magnetically relevant particle in QGP) was fully polarized during this era at a temperature of \(150\) MeV shortly prior to hadronization, this would correspond to an estimated cosmic magnetic strength \(M = \mathcal{M}/V\) of
 
@@ -138,16 +104,6 @@ If the incredibly dense gas of up \((u)\) quarks (the most magnetically relevant
 \end{align}
 
 where \(\mathcal{M}\) is the magnetization, \(\mu_{u}\) is the up quark magneton, and \(n_{u}\) is the up quark number density. This can also be understood as \(\approx3.2\times10^{4}\) the critical magnetic field strength \(\mathcal{B}\equiv m_{e}^{2}/e\) and over \(10^3\) stronger than the upper estimated surface field strengths of magnetars.
-
-The magnetic dipole of a particle is opposite in sign to its antiparticle $\mu_{i}=-\mu_{\bar{i}}$ as charge is flipped. Any deviation from this condition would represent a violation of CPT~\cite{Colladay:1996iz,Bluhm:1997ci,BASE:2016yuo}. The magnetic moments of the relevant magnetic species are
-\begin{align}
-    \label{eq:moments}
-    \mu_{u}&=+\frac{2}{3}\left|\frac{g_{u}}{2}\right|\frac{e\hbar}{2m_{u}}\,,&\qquad
-    \mu_{d}&=-\frac{1}{3}\left|\frac{g_{d}}{2}\right|\frac{e\hbar}{2m_{d}}\,,&\qquad
-    \mu_{s}&=+\frac{2}{3}\left|\frac{g_{s}}{2}\right|\frac{e\hbar}{2m_{s}}\,,&\qquad
-    \mu_{e}&=-1\left|\frac{g_{e}}{2}\right|\frac{e\hbar}{2m_{e}}\,,&
-\end{align}
-where $e=-Q_{e}$ is the value of elementary charge and $g_{i}$ the $g$-factor of the particle.
 
 In~\cite{Steinmetz:2023nsc,Steinmetz:2023ucp}, we explored the magnetic properties of the magnetized electron-positron plasma around the period of Big Bang Nucleosynthesis. We expand those efforts to now consider the magnetization of QGP where both density of magnetic particles and the external fields are greatly increased as we consider temperatures upward of $500\MeV$. We aim to understand how magnetic dipole moments impact the chemical potentials of quarks and evaluate the overall magnetization of the primordial Universe QGP.
 
@@ -168,11 +124,11 @@ During this period, particle-antiparticle pairs of quarks and antiquarks were fr
 We consider a free but magnetized fermion gas in the temperature range $500\MeV>T>150\MeV$ composed of light-quark species $q \in {u,d,s}$. As the quark magneton scales with $\mu_{q} \sim Q_q/2m_q$, these species are magnetically the most relevant due to their lighter masses $m_q$ and consequently larger magnetic moments.
 
 Here, $Q_q$ denotes the electric charges of the light quarks, taking values $Q_q \in {\pm \tfrac{1}{3}, \pm \tfrac{2}{3}}$. Therefore in accounting for the internal energy $E$ of QGP, the energies of the electrons and neutrinos must also be included to fully determine the QGP state. We take into account the following properties: 
-\begin{itemize}
-    \item[(a)] The energy of adding or removing a baryon $\eta_{B}B$,
-    \item[(b)] the energy of adding or removing a lepton $\eta_{\ell}(N_{\ell}-N_{\ell})$ with $\ell\in {e,\nu}$, 
-    \item[(c)] the magnetic energy $\mathcal{M}\mathcal{B}$ where $\mathcal{M}$ is the net magnetization and $\mathcal{B}$ is the magnetic field strength and
-    \item[(d)] the electromagnetic energy density generated by the external magnetic field.
+\begin{itemize}[nosep]
+    \item [(a)] The energy of adding or removing a baryon $\eta_{B}B$,
+    \item [(b)] the energy of adding or removing a lepton $\eta_{\ell}(N_{\ell}-N_{\ell})$ with $\ell\in {e,\nu}$, 
+    \item [(c)] the magnetic energy $\mathcal{M}\mathcal{B}$ where $\mathcal{M}$ is the net magnetization and $\mathcal{B}$ is the magnetic field strength and
+    \item [(d)] the electromagnetic energy density generated by the external magnetic field.
 \end{itemize}
 Magnetic field strength $\mathcal{B}$ should not be confused with baryon number $B$. Additionally, the internal energy and chemical potential of QGP is sensitive to electric fields which cause a statistical Coulomb distortion~\cite{Sigl:1996dm,Letessier:2002ony}. For the purpose of clarity and to maintain focus on magnetism, electrical fields will be omitted.
 
@@ -190,6 +146,15 @@ where $\mu_{i}$ is the magnetic dipole moment per particle $\mu_{i}\propto Q_{i}
     \label{eq:dipole2}
     &-|\mu_{e}|(N_{e}^{\uparrow}-N_{\bar{e}}^{\uparrow})+|\mu_{e}|(N_{e}^{\downarrow}-N_{\bar{e}}^{\downarrow})\,.
 \end{align}
+The magnetic dipole of a particle is opposite in sign to its antiparticle $\mu_{i}=-\mu_{\bar{i}}$ as charge is flipped. Any deviation from this condition would represent a violation of CPT~\cite{Colladay:1996iz,Bluhm:1997ci,BASE:2016yuo}. The magnetic moments of the relevant magnetic species are
+\begin{align}
+    \notag\mu_{u}&=+\frac{2}{3}\left|\frac{g_{u}}{2}\right|\frac{e\hbar}{2m_{u}}\,,&\qquad
+    \mu_{d}&=-\frac{1}{3}\left|\frac{g_{d}}{2}\right|\frac{e\hbar}{2m_{d}}\,,&\\
+    \label{eq:moments}
+    \mu_{s}&=+\frac{2}{3}\left|\frac{g_{s}}{2}\right|\frac{e\hbar}{2m_{s}}\,,&\qquad
+    \mu_{e}&=-1\left|\frac{g_{e}}{2}\right|\frac{e\hbar}{2m_{e}}\,,&
+\end{align}
+where $e=-Q_{e}$ is the value of elementary charge and $g_{i}$ the $g$-factor of the particle.
 
 We recognize that \req{eq:dipole2} contains terms representing asymmetry in the spin alignment though we can organize them in two different ways: (a) We group terms of the same spin alignment or (b) we group terms of matter and antimatter. The second approach may allow definition of spin-asymmetry in terms of conserved quantities. Therefore, we define net spin-asymmetry numbers $\delta_{i}^{\uparrow\downarrow}$ and write
 \begin{align}
@@ -332,8 +297,9 @@ Substituting the expression for \(\partial \ln \mathcal{Z}/\partial m_{T}\) into
 \end{align}
 This expression is equivalent to the lowest order term in \req{eq:Euler_Maclaurin_Magnetization}. Much how we expected the free energy to be \(\ln\mathcal{Z}\sim T^{3}\), we see the magnetization is \(\mathcal{M}\sim T^{2}\) via dimensional analysis. This is in agreement to our prior work~\cite{Steinmetz:2023nsc,Steinmetz:2023ucp,Rafelski:2024fej} where we evaluated the magnetization in the Boltzmann limit. The benefit of expressing the magnetization in the form of \req{eq:mag_form} is that the integrand within the brackets \([\ldots]\) entirely contains the Fermi-Dirac distribution scaled by energy without mass (or magnetic fields) except as a boundary condition on the integration.
 
-%%%%%%%%%%%%%%%%%%%%%%%%
-\bibliographystyle{sn-aps}% out for input
-\bibliography{short-note-qcd.bib}% out for input
-%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\bibliographystyle{sn-aps}
+\bibliography{short-note-qcd}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 \end{document}

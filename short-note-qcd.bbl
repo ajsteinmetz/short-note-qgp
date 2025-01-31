@@ -1,0 +1,204 @@
+\begin{thebibliography}{10}
+\providecommand{\url}[1]{{#1}}
+\providecommand{\urlprefix}{URL }
+\providecommand{\doi}[1]{\url{https://doi.org/#1}}
+
+\bibitem{Letessier:2002ony}
+J.~Letessier, J.~Rafelski, \emph{Hadrons and Quark–Gluon Plasma}.
+\newblock Cambridge Monographs on Particle Physics, Nuclear Physics and
+  Cosmology (Cambridge University Press, Cambridge, UK, 2023).
+\newblock \doi{10.1017/9781009290753}.
+\newblock \emph{Open access.} [eBook. Orig. pub. 2002]
+
+\bibitem{Rafelski:2015cxa}
+J.~Rafelski, {Melting Hadrons, Boiling Quarks}.
+\newblock Eur. Phys. J. A \textbf{51}(9), 114 (2015).
+\newblock \doi{10.1140/epja/i2015-15114-0}.
+\newblock {\href{https://arxiv.org/abs/1508.03260}{{arXiv:1508.03260}}}
+  {[nucl-th]}
+
+\bibitem{Rafelski:2023emw}
+J.~Rafelski, J.~Birrell, A.~Steinmetz, C.T. Yang, {A Short Survey of
+  Matter-Antimatter Evolution in the Primordial Universe}.
+\newblock Universe \textbf{9}(7), 309 (2023).
+\newblock \doi{10.3390/universe9070309}.
+\newblock {\href{https://arxiv.org/abs/2305.09055}{{arXiv:2305.09055}}}
+  {[hep-th]}
+
+\bibitem{Rafelski:2024fej}
+J.~Rafelski, J.~Birrell, C.~Grayson, A.~Steinmetz, C.T. Yang, {Quarks to
+  Cosmos: Particles and Plasma in Cosmological evolution}.
+\newblock In press EPJ ST  (2024).
+\newblock {\href{https://arxiv.org/abs/2409.19031}{{arXiv:2409.19031}}}
+  {[hep-ph]}
+
+\bibitem{Shuryak:2004cy}
+E.V. Shuryak, {What RHIC experiments and theory tell us about properties of
+  quark-gluon plasma?}
+\newblock Nucl. Phys. A \textbf{750}, 64--83 (2005).
+\newblock \doi{10.1016/j.nuclphysa.2004.10.022}.
+\newblock {\href{https://arxiv.org/abs/hep-ph/0405066}{{arXiv:hep-ph/0405066}}}
+
+\bibitem{HotQCD:2014kol}
+A.~Bazavov, et~al., {Equation of state in ( 2+1 )-flavor QCD}.
+\newblock Phys. Rev. D \textbf{90}, 094503 (2014).
+\newblock \doi{10.1103/PhysRevD.90.094503}.
+\newblock {\href{https://arxiv.org/abs/1407.6387}{{arXiv:1407.6387}}}
+  {[hep-lat]}
+
+\bibitem{Uzan:2010pm}
+J.P. Uzan, {Varying Constants, Gravitation and Cosmology}.
+\newblock Living Rev. Rel. \textbf{14}, 2 (2011).
+\newblock \doi{10.12942/lrr-2011-2}.
+\newblock {\href{https://arxiv.org/abs/1009.5514}{{arXiv:1009.5514}}}
+  {[astro-ph.CO]}
+
+\bibitem{Uzan:2024ded}
+J.P. Uzan, {Fundamental constants: from measurement to the universe, a window
+  on gravitation and cosmology}.
+\newblock arXiv preprint  (2024).
+\newblock {\href{https://arxiv.org/abs/2410.07281}{{arXiv:2410.07281}}}
+  {[astro-ph.CO]}
+
+\bibitem{Grasso:2000wj}
+D.~Grasso, H.R. Rubinstein, {Magnetic fields in the early universe}.
+\newblock Phys. Rept. \textbf{348}, 163--266 (2001).
+\newblock \doi{10.1016/S0370-1573(00)00110-1}.
+\newblock
+  {\href{https://arxiv.org/abs/astro-ph/0009061}{{arXiv:astro-ph/0009061}}}
+
+\bibitem{Widrow:2002ud}
+L.M. Widrow, {Origin of galactic and extragalactic magnetic fields}.
+\newblock Rev. Mod. Phys. \textbf{74}, 775--823 (2002).
+\newblock \doi{10.1103/RevModPhys.74.775}.
+\newblock
+  {\href{https://arxiv.org/abs/astro-ph/0207240}{{arXiv:astro-ph/0207240}}}
+
+\bibitem{Kandus:2010nw}
+A.~Kandus, K.E. Kunze, C.G. Tsagas, {Primordial magnetogenesis}.
+\newblock Phys. Rept. \textbf{505}, 1--58 (2011).
+\newblock \doi{10.1016/j.physrep.2011.03.001}.
+\newblock {\href{https://arxiv.org/abs/1007.3891}{{arXiv:1007.3891}}}
+  {[astro-ph.CO]}
+
+\bibitem{Colladay:1996iz}
+D.~Colladay, V.A. Kostelecky, {CPT violation and the standard model}.
+\newblock Phys. Rev. D \textbf{55}, 6760--6774 (1997).
+\newblock \doi{10.1103/PhysRevD.55.6760}.
+\newblock {\href{https://arxiv.org/abs/hep-ph/9703464}{{arXiv:hep-ph/9703464}}}
+
+\bibitem{Bluhm:1997ci}
+R.~Bluhm, V.A. Kostelecky, N.~Russell, {Testing CPT with anomalous magnetic
+  moments}.
+\newblock Phys. Rev. Lett. \textbf{79}, 1432--1435 (1997).
+\newblock \doi{10.1103/PhysRevLett.79.1432}.
+\newblock {\href{https://arxiv.org/abs/hep-ph/9707364}{{arXiv:hep-ph/9707364}}}
+
+\bibitem{BASE:2016yuo}
+C.~Smorra, et~al., {A parts-per-billion measurement of the antiproton magnetic
+  moment}.
+\newblock Nature \textbf{550}(7676), 371--374 (2017).
+\newblock \doi{10.1038/nature24048}
+
+\bibitem{Steinmetz:2023nsc}
+A.~Steinmetz, C.T. Yang, J.~Rafelski, {Matter-antimatter origin of cosmic
+  magnetism}.
+\newblock Phys. Rev. D \textbf{108}(12), 123522 (2023).
+\newblock \doi{10.1103/PhysRevD.108.123522}.
+\newblock {\href{https://arxiv.org/abs/2308.14818}{{arXiv:2308.14818}}}
+  {[hep-ph]}
+
+\bibitem{Steinmetz:2023ucp}
+A.~Steinmetz, {Modern topics in relativistic spin dynamics and magnetism}.
+\newblock Ph.D. thesis, Arizona U. (2023).
+\newblock HDL:\href{https://hdl.handle.net/10150/670301}{10150/670301}
+  \href{https://arxiv.org/abs/2310.07193}{arXiv:2310.07193} [hep-ph]
+
+\bibitem{Durrer:2013pga}
+R.~Durrer, A.~Neronov, {Cosmological Magnetic Fields: Their Generation,
+  Evolution and Observation}.
+\newblock Astron. Astrophys. Rev. \textbf{21}, 62 (2013).
+\newblock \doi{10.1007/s00159-013-0062-7}.
+\newblock {\href{https://arxiv.org/abs/1303.7121}{{arXiv:1303.7121}}}
+  {[astro-ph.CO]}
+
+\bibitem{Subramanian:2015lua}
+K.~Subramanian, {The origin, evolution and signatures of primordial magnetic
+  fields}.
+\newblock Rept. Prog. Phys. \textbf{79}(7), 076901 (2016).
+\newblock \doi{10.1088/0034-4885/79/7/076901}.
+\newblock {\href{https://arxiv.org/abs/1504.02311}{{arXiv:1504.02311}}}
+  {[astro-ph.CO]}
+
+\bibitem{Vachaspati:1991nm}
+T.~Vachaspati, {Magnetic fields from cosmological phase transitions}.
+\newblock Phys. Lett. B \textbf{265}, 258--261 (1991).
+\newblock \doi{10.1016/0370-2693(91)90051-Q}
+
+\bibitem{Baym:1995fk}
+G.~Baym, D.~Bodeker, L.D. McLerran, {Magnetic fields produced by phase
+  transition bubbles in the electroweak phase transition}.
+\newblock Phys. Rev. D \textbf{53}, 662--667 (1996).
+\newblock \doi{10.1103/PhysRevD.53.662}.
+\newblock {\href{https://arxiv.org/abs/hep-ph/9507429}{{arXiv:hep-ph/9507429}}}
+
+\bibitem{Fukushima:2008xe}
+K.~Fukushima, D.E. Kharzeev, H.J. Warringa, {The Chiral Magnetic Effect}.
+\newblock Phys. Rev. D \textbf{78}, 074033 (2008).
+\newblock \doi{10.1103/PhysRevD.78.074033}.
+\newblock {\href{https://arxiv.org/abs/0808.3382}{{arXiv:0808.3382}}}
+  {[hep-ph]}
+
+\bibitem{Boyarsky:2011uy}
+A.~Boyarsky, J.~Frohlich, O.~Ruchayskiy, {Self-consistent evolution of magnetic
+  fields and chiral asymmetry in the early Universe}.
+\newblock Phys. Rev. Lett. \textbf{108}, 031301 (2012).
+\newblock \doi{10.1103/PhysRevLett.108.031301}.
+\newblock {\href{https://arxiv.org/abs/1109.3350}{{arXiv:1109.3350}}}
+  {[astro-ph.CO]}
+
+\bibitem{Bali:2011qj}
+G.S. Bali, F.~Bruckmann, G.~Endrodi, Z.~Fodor, S.D. Katz, S.~Krieg, A.~Schafer,
+  K.K. Szabo, {The QCD phase diagram for external magnetic fields}.
+\newblock JHEP \textbf{02}, 044 (2012).
+\newblock \doi{10.1007/JHEP02(2012)044}.
+\newblock {\href{https://arxiv.org/abs/1111.4956}{{arXiv:1111.4956}}}
+  {[hep-lat]}
+
+\bibitem{Elze:1980er}
+H.T. Elze, W.~Greiner, J.~Rafelski, {The relativistic Fermi gas revisited}.
+\newblock J. Phys. G \textbf{6}, L149--L153 (1980).
+\newblock \doi{10.1088/0305-4616/6/9/003}
+
+\bibitem{Yang:2024ret}
+C.T. Yang, {Elementary Particles and Plasma in the First Hour of the Early
+  Universe}.
+\newblock Ph.D. thesis, Arizona U. (2024).
+\newblock HDL:\href{https://hdl.handle.net/10150/670280}{10150/670280}
+  \href{https://arxiv.org/abs/2401.09653}{arXiv:2401.09653} [hep-ph]
+
+\bibitem{Sigl:1996dm}
+G.~Sigl, A.V. Olinto, K.~Jedamzik, {Primordial magnetic fields from
+  cosmological first order phase transitions}.
+\newblock Phys. Rev. D \textbf{55}, 4582--4590 (1997).
+\newblock \doi{10.1103/PhysRevD.55.4582}.
+\newblock
+  {\href{https://arxiv.org/abs/astro-ph/9610201}{{arXiv:astro-ph/9610201}}}
+
+\bibitem{Bali:2014kia}
+G.S. Bali, F.~Bruckmann, G.~Endr\"odi, S.D. Katz, A.~Sch\"afer, {The QCD
+  equation of state in background magnetic fields}.
+\newblock JHEP \textbf{08}, 177 (2014).
+\newblock \doi{10.1007/JHEP08(2014)177}.
+\newblock {\href{https://arxiv.org/abs/1406.0269}{{arXiv:1406.0269}}}
+  {[hep-lat]}
+
+\bibitem{Steinmetz:2018ryf}
+A.~Steinmetz, M.~Formanek, J.~Rafelski, {Magnetic Dipole Moment in Relativistic
+  Quantum Mechanics}.
+\newblock Eur. Phys. J. A \textbf{55}(3), 40 (2019).
+\newblock \doi{10.1140/epja/i2019-12715-5}.
+\newblock {\href{https://arxiv.org/abs/1811.06233}{{arXiv:1811.06233}}}
+  {[hep-ph]}
+
+\end{thebibliography}
