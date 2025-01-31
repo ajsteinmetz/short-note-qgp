@@ -46,6 +46,33 @@ A.~Bazavov, et~al., {Equation of state in ( 2+1 )-flavor QCD}.
 \newblock {\href{https://arxiv.org/abs/1407.6387}{{arXiv:1407.6387}}}
   {[hep-lat]}
 
+\bibitem{Rafelski:1982pu}
+J.~Rafelski, B.~Muller, {Strangeness Production in the Quark - Gluon Plasma}.
+\newblock Phys. Rev. Lett. \textbf{48}, 1066 (1982).
+\newblock \doi{10.1103/PhysRevLett.48.1066}.
+\newblock [Erratum: Phys.Rev.Lett. 56, 2334 (1986)]
+
+\bibitem{STAR:2005gfr}
+J.~Adams, et~al., {Experimental and theoretical challenges in the search for
+  the quark gluon plasma: The STAR Collaboration's critical assessment of the
+  evidence from RHIC collisions}.
+\newblock Nucl. Phys. A \textbf{757}, 102--183 (2005).
+\newblock \doi{10.1016/j.nuclphysa.2005.03.085}.
+\newblock
+  {\href{https://arxiv.org/abs/nucl-ex/0501009}{{arXiv:nucl-ex/0501009}}}
+
+\bibitem{Palni:2024wdy}
+P.~Palni, et~al., \emph{{Dynamics of Hot QCD Matter 2024 -- Bulk Properties}},
+  in \emph{{2nd Hot QCD Matter Conference 2024}} (2024).
+\newblock \href{https://arxiv.org/abs/2412.10779}{arXiv:2412.10779} [nucl-th]
+
+\bibitem{Mu:2025gtr}
+Y.S. Mu, J.A. Sun, L.~Yan, X.G. Huang, {Extracting the Speed of Sound in
+  Heavy-Ion Collisions: A Study of Quantum Fluctuations and Thermalization}.
+\newblock (preprint)  (2025).
+\newblock {\href{https://arxiv.org/abs/2501.02777}{{arXiv:2501.02777}}}
+  {[nucl-th]}
+
 \bibitem{Uzan:2010pm}
 J.P. Uzan, {Varying Constants, Gravitation and Cosmology}.
 \newblock Living Rev. Rel. \textbf{14}, 2 (2011).
@@ -80,39 +107,6 @@ A.~Kandus, K.E. Kunze, C.G. Tsagas, {Primordial magnetogenesis}.
 \newblock \doi{10.1016/j.physrep.2011.03.001}.
 \newblock {\href{https://arxiv.org/abs/1007.3891}{{arXiv:1007.3891}}}
   {[astro-ph.CO]}
-
-\bibitem{Colladay:1996iz}
-D.~Colladay, V.A. Kostelecky, {CPT violation and the standard model}.
-\newblock Phys. Rev. D \textbf{55}, 6760--6774 (1997).
-\newblock \doi{10.1103/PhysRevD.55.6760}.
-\newblock {\href{https://arxiv.org/abs/hep-ph/9703464}{{arXiv:hep-ph/9703464}}}
-
-\bibitem{Bluhm:1997ci}
-R.~Bluhm, V.A. Kostelecky, N.~Russell, {Testing CPT with anomalous magnetic
-  moments}.
-\newblock Phys. Rev. Lett. \textbf{79}, 1432--1435 (1997).
-\newblock \doi{10.1103/PhysRevLett.79.1432}.
-\newblock {\href{https://arxiv.org/abs/hep-ph/9707364}{{arXiv:hep-ph/9707364}}}
-
-\bibitem{BASE:2016yuo}
-C.~Smorra, et~al., {A parts-per-billion measurement of the antiproton magnetic
-  moment}.
-\newblock Nature \textbf{550}(7676), 371--374 (2017).
-\newblock \doi{10.1038/nature24048}
-
-\bibitem{Steinmetz:2023nsc}
-A.~Steinmetz, C.T. Yang, J.~Rafelski, {Matter-antimatter origin of cosmic
-  magnetism}.
-\newblock Phys. Rev. D \textbf{108}(12), 123522 (2023).
-\newblock \doi{10.1103/PhysRevD.108.123522}.
-\newblock {\href{https://arxiv.org/abs/2308.14818}{{arXiv:2308.14818}}}
-  {[hep-ph]}
-
-\bibitem{Steinmetz:2023ucp}
-A.~Steinmetz, {Modern topics in relativistic spin dynamics and magnetism}.
-\newblock Ph.D. thesis, Arizona U. (2023).
-\newblock HDL:\href{https://hdl.handle.net/10150/670301}{10150/670301}
-  \href{https://arxiv.org/abs/2310.07193}{arXiv:2310.07193} [hep-ph]
 
 \bibitem{Durrer:2013pga}
 R.~Durrer, A.~Neronov, {Cosmological Magnetic Fields: Their Generation,
@@ -164,6 +158,39 @@ G.S. Bali, F.~Bruckmann, G.~Endrodi, Z.~Fodor, S.D. Katz, S.~Krieg, A.~Schafer,
 \newblock \doi{10.1007/JHEP02(2012)044}.
 \newblock {\href{https://arxiv.org/abs/1111.4956}{{arXiv:1111.4956}}}
   {[hep-lat]}
+
+\bibitem{Colladay:1996iz}
+D.~Colladay, V.A. Kostelecky, {CPT violation and the standard model}.
+\newblock Phys. Rev. D \textbf{55}, 6760--6774 (1997).
+\newblock \doi{10.1103/PhysRevD.55.6760}.
+\newblock {\href{https://arxiv.org/abs/hep-ph/9703464}{{arXiv:hep-ph/9703464}}}
+
+\bibitem{Bluhm:1997ci}
+R.~Bluhm, V.A. Kostelecky, N.~Russell, {Testing CPT with anomalous magnetic
+  moments}.
+\newblock Phys. Rev. Lett. \textbf{79}, 1432--1435 (1997).
+\newblock \doi{10.1103/PhysRevLett.79.1432}.
+\newblock {\href{https://arxiv.org/abs/hep-ph/9707364}{{arXiv:hep-ph/9707364}}}
+
+\bibitem{BASE:2016yuo}
+C.~Smorra, et~al., {A parts-per-billion measurement of the antiproton magnetic
+  moment}.
+\newblock Nature \textbf{550}(7676), 371--374 (2017).
+\newblock \doi{10.1038/nature24048}
+
+\bibitem{Steinmetz:2023nsc}
+A.~Steinmetz, C.T. Yang, J.~Rafelski, {Matter-antimatter origin of cosmic
+  magnetism}.
+\newblock Phys. Rev. D \textbf{108}(12), 123522 (2023).
+\newblock \doi{10.1103/PhysRevD.108.123522}.
+\newblock {\href{https://arxiv.org/abs/2308.14818}{{arXiv:2308.14818}}}
+  {[hep-ph]}
+
+\bibitem{Steinmetz:2023ucp}
+A.~Steinmetz, {Modern topics in relativistic spin dynamics and magnetism}.
+\newblock Ph.D. thesis, Arizona U. (2023).
+\newblock HDL:\href{https://hdl.handle.net/10150/670301}{10150/670301}
+  \href{https://arxiv.org/abs/2310.07193}{arXiv:2310.07193} [hep-ph]
 
 \bibitem{Elze:1980er}
 H.T. Elze, W.~Greiner, J.~Rafelski, {The relativistic Fermi gas revisited}.
