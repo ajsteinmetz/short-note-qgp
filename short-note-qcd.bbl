@@ -27,8 +27,7 @@ J.~Rafelski, J.~Birrell, A.~Steinmetz, C.T. Yang, {A Short Survey of
 
 \bibitem{Rafelski:2024fej}
 J.~Rafelski, J.~Birrell, C.~Grayson, A.~Steinmetz, C.T. Yang, {Quarks to
-  Cosmos: Particles and Plasma in Cosmological evolution}.
-\newblock In press EPJ ST  (2024).
+  Cosmos: Particles and Plasma in Cosmological evolution}  (2024).
 \newblock {\href{https://arxiv.org/abs/2409.19031}{{arXiv:2409.19031}}}
   {[hep-ph]}
 
@@ -72,6 +71,13 @@ Y.S. Mu, J.A. Sun, L.~Yan, X.G. Huang, {Extracting the Speed of Sound in
 \newblock (preprint)  (2025).
 \newblock {\href{https://arxiv.org/abs/2501.02777}{{arXiv:2501.02777}}}
   {[nucl-th]}
+
+\bibitem{Yang:2024ret}
+C.T. Yang, {Elementary Particles and Plasma in the First Hour of the Early
+  Universe}.
+\newblock Ph.D. thesis, Arizona U. (2024).
+\newblock HDL:\href{https://hdl.handle.net/10150/670280}{10150/670280}
+  \href{https://arxiv.org/abs/2401.09653}{arXiv:2401.09653} [hep-ph]
 
 \bibitem{Uzan:2010pm}
 J.P. Uzan, {Varying Constants, Gravitation and Cosmology}.
@@ -159,24 +165,12 @@ G.S. Bali, F.~Bruckmann, G.~Endrodi, Z.~Fodor, S.D. Katz, S.~Krieg, A.~Schafer,
 \newblock {\href{https://arxiv.org/abs/1111.4956}{{arXiv:1111.4956}}}
   {[hep-lat]}
 
-\bibitem{Colladay:1996iz}
-D.~Colladay, V.A. Kostelecky, {CPT violation and the standard model}.
-\newblock Phys. Rev. D \textbf{55}, 6760--6774 (1997).
-\newblock \doi{10.1103/PhysRevD.55.6760}.
-\newblock {\href{https://arxiv.org/abs/hep-ph/9703464}{{arXiv:hep-ph/9703464}}}
-
-\bibitem{Bluhm:1997ci}
-R.~Bluhm, V.A. Kostelecky, N.~Russell, {Testing CPT with anomalous magnetic
-  moments}.
-\newblock Phys. Rev. Lett. \textbf{79}, 1432--1435 (1997).
-\newblock \doi{10.1103/PhysRevLett.79.1432}.
-\newblock {\href{https://arxiv.org/abs/hep-ph/9707364}{{arXiv:hep-ph/9707364}}}
-
-\bibitem{BASE:2016yuo}
-C.~Smorra, et~al., {A parts-per-billion measurement of the antiproton magnetic
-  moment}.
-\newblock Nature \textbf{550}(7676), 371--374 (2017).
-\newblock \doi{10.1038/nature24048}
+\bibitem{Kaspi:2017fwg}
+V.M. Kaspi, A.~Beloborodov, {Magnetars}.
+\newblock Ann. Rev. Astron. Astrophys. \textbf{55}, 261--301 (2017).
+\newblock \doi{10.1146/annurev-astro-081915-023329}.
+\newblock {\href{https://arxiv.org/abs/1703.00068}{{arXiv:1703.00068}}}
+  {[astro-ph.HE]}
 
 \bibitem{Steinmetz:2023nsc}
 A.~Steinmetz, C.T. Yang, J.~Rafelski, {Matter-antimatter origin of cosmic
@@ -197,12 +191,31 @@ H.T. Elze, W.~Greiner, J.~Rafelski, {The relativistic Fermi gas revisited}.
 \newblock J. Phys. G \textbf{6}, L149--L153 (1980).
 \newblock \doi{10.1088/0305-4616/6/9/003}
 
-\bibitem{Yang:2024ret}
-C.T. Yang, {Elementary Particles and Plasma in the First Hour of the Early
-  Universe}.
-\newblock Ph.D. thesis, Arizona U. (2024).
-\newblock HDL:\href{https://hdl.handle.net/10150/670280}{10150/670280}
-  \href{https://arxiv.org/abs/2401.09653}{arXiv:2401.09653} [hep-ph]
+\bibitem{Colladay:1996iz}
+D.~Colladay, V.A. Kostelecky, {CPT violation and the standard model}.
+\newblock Phys. Rev. D \textbf{55}, 6760--6774 (1997).
+\newblock \doi{10.1103/PhysRevD.55.6760}.
+\newblock {\href{https://arxiv.org/abs/hep-ph/9703464}{{arXiv:hep-ph/9703464}}}
+
+\bibitem{Bluhm:1997ci}
+R.~Bluhm, V.A. Kostelecky, N.~Russell, {Testing CPT with anomalous magnetic
+  moments}.
+\newblock Phys. Rev. Lett. \textbf{79}, 1432--1435 (1997).
+\newblock \doi{10.1103/PhysRevLett.79.1432}.
+\newblock {\href{https://arxiv.org/abs/hep-ph/9707364}{{arXiv:hep-ph/9707364}}}
+
+\bibitem{BASE:2016yuo}
+C.~Smorra, et~al., {A parts-per-billion measurement of the antiproton magnetic
+  moment}.
+\newblock Nature \textbf{550}(7676), 371--374 (2017).
+\newblock \doi{10.1038/nature24048}
+
+\bibitem{Birrell:2014ona}
+J.~Birrell, {Non-Equilibrium Aspects of Relic Neutrinos: From Freeze-out to the
+  Present Day}.
+\newblock Ph.D. thesis, Arizona U. (2014).
+\newblock HDL:\href{https://hdl.handle.net/10150/322969}{10150/322969}
+  \href{https://arxiv.org/abs/1409.4500}{arXiv:1409.4500} [nucl-th]
 
 \bibitem{Sigl:1996dm}
 G.~Sigl, A.V. Olinto, K.~Jedamzik, {Primordial magnetic fields from
