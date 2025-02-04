@@ -3,19 +3,12 @@
 \providecommand{\urlprefix}{URL }
 \providecommand{\doi}[1]{\url{https://doi.org/#1}}
 
-\bibitem{Letessier:2002ony}
-J.~Letessier, J.~Rafelski, \emph{Hadrons and Quark–Gluon Plasma}.
-\newblock Cambridge Monographs on Particle Physics, Nuclear Physics and
-  Cosmology (Cambridge University Press, Cambridge, UK, 2023).
-\newblock \doi{10.1017/9781009290753}.
-\newblock \emph{Open access.} [eBook. Orig. pub. 2002]
-
-\bibitem{Rafelski:2015cxa}
-J.~Rafelski, {Melting Hadrons, Boiling Quarks}.
-\newblock Eur. Phys. J. A \textbf{51}(9), 114 (2015).
-\newblock \doi{10.1140/epja/i2015-15114-0}.
-\newblock {\href{https://arxiv.org/abs/1508.03260}{{arXiv:1508.03260}}}
-  {[nucl-th]}
+\bibitem{Rafelski:2019twp}
+J.~Rafelski, {Discovery of Quark-Gluon-Plasma: Strangeness Diaries}.
+\newblock Eur. Phys. J. ST \textbf{229}(1), 1--140 (2020).
+\newblock \doi{10.1140/epjst/e2019-900263-x}.
+\newblock {\href{https://arxiv.org/abs/1911.00831}{{arXiv:1911.00831}}}
+  {[hep-ph]}
 
 \bibitem{Rafelski:2023emw}
 J.~Rafelski, J.~Birrell, A.~Steinmetz, C.T. Yang, {A Short Survey of
@@ -27,117 +20,25 @@ J.~Rafelski, J.~Birrell, A.~Steinmetz, C.T. Yang, {A Short Survey of
 
 \bibitem{Rafelski:2024fej}
 J.~Rafelski, J.~Birrell, C.~Grayson, A.~Steinmetz, C.T. Yang, {Quarks to
-  Cosmos: Particles and Plasma in Cosmological evolution}  (2024).
+  Cosmos: Particles and Plasma in Cosmological evolution}.
+\newblock (In Press EPJ ST)  (2024).
 \newblock {\href{https://arxiv.org/abs/2409.19031}{{arXiv:2409.19031}}}
   {[hep-ph]}
 
-\bibitem{Shuryak:2004cy}
-E.V. Shuryak, {What RHIC experiments and theory tell us about properties of
-  quark-gluon plasma?}
-\newblock Nucl. Phys. A \textbf{750}, 64--83 (2005).
-\newblock \doi{10.1016/j.nuclphysa.2004.10.022}.
-\newblock {\href{https://arxiv.org/abs/hep-ph/0405066}{{arXiv:hep-ph/0405066}}}
-
-\bibitem{HotQCD:2014kol}
-A.~Bazavov, et~al., {Equation of state in ( 2+1 )-flavor QCD}.
-\newblock Phys. Rev. D \textbf{90}, 094503 (2014).
-\newblock \doi{10.1103/PhysRevD.90.094503}.
-\newblock {\href{https://arxiv.org/abs/1407.6387}{{arXiv:1407.6387}}}
-  {[hep-lat]}
-
-\bibitem{Rafelski:1982pu}
-J.~Rafelski, B.~Muller, {Strangeness Production in the Quark - Gluon Plasma}.
-\newblock Phys. Rev. Lett. \textbf{48}, 1066 (1982).
-\newblock \doi{10.1103/PhysRevLett.48.1066}.
-\newblock [Erratum: Phys.Rev.Lett. 56, 2334 (1986)]
-
-\bibitem{STAR:2005gfr}
-J.~Adams, et~al., {Experimental and theoretical challenges in the search for
-  the quark gluon plasma: The STAR Collaboration's critical assessment of the
-  evidence from RHIC collisions}.
-\newblock Nucl. Phys. A \textbf{757}, 102--183 (2005).
-\newblock \doi{10.1016/j.nuclphysa.2005.03.085}.
+\bibitem{Letessier:2005qe}
+J.~Letessier, J.~Rafelski, {Hadron production and phase changes in relativistic
+  heavy ion collisions}.
+\newblock Eur. Phys. J. A \textbf{35}, 221--242 (2008).
+\newblock \doi{10.1140/epja/i2007-10546-7}.
 \newblock
-  {\href{https://arxiv.org/abs/nucl-ex/0501009}{{arXiv:nucl-ex/0501009}}}
-
-\bibitem{Palni:2024wdy}
-P.~Palni, et~al., \emph{{Dynamics of Hot QCD Matter 2024 -- Bulk Properties}},
-  in \emph{{2nd Hot QCD Matter Conference 2024}} (2024).
-\newblock \href{https://arxiv.org/abs/2412.10779}{arXiv:2412.10779} [nucl-th]
-
-\bibitem{Grayson:2024okq}
-C.~Grayson, {Dense Relativistic Matter-Antimatter Plasmas}.
-\newblock Ph.D. thesis, The University of Arizona (2024)
-
-\bibitem{Mu:2025gtr}
-Y.S. Mu, J.A. Sun, L.~Yan, X.G. Huang, {Extracting the Speed of Sound in
-  Heavy-Ion Collisions: A Study of Quantum Fluctuations and Thermalization}.
-\newblock (preprint)  (2025).
-\newblock {\href{https://arxiv.org/abs/2501.02777}{{arXiv:2501.02777}}}
-  {[nucl-th]}
-
-\bibitem{Yang:2024ret}
-C.T. Yang, {Elementary Particles and Plasma in the First Hour of the Early
-  Universe}.
-\newblock Ph.D. thesis, Arizona U. (2024).
-\newblock HDL:\href{https://hdl.handle.net/10150/670280}{10150/670280}
-  \href{https://arxiv.org/abs/2401.09653}{arXiv:2401.09653} [hep-ph]
+  {\href{https://arxiv.org/abs/nucl-th/0504028}{{arXiv:nucl-th/0504028}}}
 
 \bibitem{Ghosh:2025sjn}
 R.~Ghosh, I.A. Shovkovy, {Neutrino energy and momentum emission from magnetized
-  dense quark matter}  (2025).
+  dense quark matter}.
+\newblock (preprint)  (2025).
 \newblock {\href{https://arxiv.org/abs/2501.03318}{{arXiv:2501.03318}}}
   {[hep-ph]}
-
-\bibitem{Uzan:2010pm}
-J.P. Uzan, {Varying Constants, Gravitation and Cosmology}.
-\newblock Living Rev. Rel. \textbf{14}, 2 (2011).
-\newblock \doi{10.12942/lrr-2011-2}.
-\newblock {\href{https://arxiv.org/abs/1009.5514}{{arXiv:1009.5514}}}
-  {[astro-ph.CO]}
-
-\bibitem{Uzan:2024ded}
-J.P. Uzan, {Fundamental constants: from measurement to the universe, a window
-  on gravitation and cosmology}.
-\newblock arXiv preprint  (2024).
-\newblock {\href{https://arxiv.org/abs/2410.07281}{{arXiv:2410.07281}}}
-  {[astro-ph.CO]}
-
-\bibitem{Grasso:2000wj}
-D.~Grasso, H.R. Rubinstein, {Magnetic fields in the early universe}.
-\newblock Phys. Rept. \textbf{348}, 163--266 (2001).
-\newblock \doi{10.1016/S0370-1573(00)00110-1}.
-\newblock
-  {\href{https://arxiv.org/abs/astro-ph/0009061}{{arXiv:astro-ph/0009061}}}
-
-\bibitem{Widrow:2002ud}
-L.M. Widrow, {Origin of galactic and extragalactic magnetic fields}.
-\newblock Rev. Mod. Phys. \textbf{74}, 775--823 (2002).
-\newblock \doi{10.1103/RevModPhys.74.775}.
-\newblock
-  {\href{https://arxiv.org/abs/astro-ph/0207240}{{arXiv:astro-ph/0207240}}}
-
-\bibitem{Kandus:2010nw}
-A.~Kandus, K.E. Kunze, C.G. Tsagas, {Primordial magnetogenesis}.
-\newblock Phys. Rept. \textbf{505}, 1--58 (2011).
-\newblock \doi{10.1016/j.physrep.2011.03.001}.
-\newblock {\href{https://arxiv.org/abs/1007.3891}{{arXiv:1007.3891}}}
-  {[astro-ph.CO]}
-
-\bibitem{Ghosh:2024owm}
-R.~Ghosh, I.A. Shovkovy, {Anisotropic charge transport in strongly magnetized
-  relativistic matter}.
-\newblock Eur. Phys. J. C \textbf{84}(11), 1179 (2024).
-\newblock \doi{10.1140/epjc/s10052-024-13570-3}.
-\newblock {\href{https://arxiv.org/abs/2407.13828}{{arXiv:2407.13828}}}
-  {[hep-ph]}
-
-\bibitem{Kaspi:2017fwg}
-V.M. Kaspi, A.~Beloborodov, {Magnetars}.
-\newblock Ann. Rev. Astron. Astrophys. \textbf{55}, 261--301 (2017).
-\newblock \doi{10.1146/annurev-astro-081915-023329}.
-\newblock {\href{https://arxiv.org/abs/1703.00068}{{arXiv:1703.00068}}}
-  {[astro-ph.HE]}
 
 \bibitem{Steinmetz:2023nsc}
 A.~Steinmetz, C.T. Yang, J.~Rafelski, {Matter-antimatter origin of cosmic
@@ -169,14 +70,6 @@ C.~Grayson, C.T. Yang, M.~Formanek, J.~Rafelski, {Self-consistent Strong
 \newblock {\href{https://arxiv.org/abs/2406.13055}{{arXiv:2406.13055}}}
   {[nucl-th]}
 
-\bibitem{Rafelski:2023zgp}
-J.~Rafelski, A.~Steinmetz, C.T. Yang, {Dynamic fermion flavor mixing through
-  transition dipole moments}.
-\newblock Int. J. Mod. Phys. A \textbf{38}(31), 2350163 (2023).
-\newblock \doi{10.1142/S0217751X23501634}.
-\newblock {\href{https://arxiv.org/abs/2309.15797}{{arXiv:2309.15797}}}
-  {[hep-ph]}
-
 \bibitem{Durrer:2013pga}
 R.~Durrer, A.~Neronov, {Cosmological Magnetic Fields: Their Generation,
   Evolution and Observation}.
@@ -192,6 +85,30 @@ K.~Subramanian, {The origin, evolution and signatures of primordial magnetic
 \newblock \doi{10.1088/0034-4885/79/7/076901}.
 \newblock {\href{https://arxiv.org/abs/1504.02311}{{arXiv:1504.02311}}}
   {[astro-ph.CO]}
+
+\bibitem{Grayson:2022asf}
+C.~Grayson, M.~Formanek, J.~Rafelski, B.~Mueller, {Dynamic magnetic response of
+  the quark-gluon plasma to electromagnetic fields}.
+\newblock Phys. Rev. D \textbf{106}(1), 014011 (2022).
+\newblock \doi{10.1103/PhysRevD.106.014011}.
+\newblock {\href{https://arxiv.org/abs/2204.14186}{{arXiv:2204.14186}}}
+  {[hep-ph]}
+
+\bibitem{Shovkovy:2022bnd}
+I.A. Shovkovy, {Electromagnetic Response in an Expanding
+  Quark\textendash{}Gluon Plasma}.
+\newblock Particles \textbf{5}(4), 442--450 (2022).
+\newblock \doi{10.3390/particles5040034}.
+\newblock {\href{https://arxiv.org/abs/2210.00691}{{arXiv:2210.00691}}}
+  {[nucl-th]}
+
+\bibitem{Ghosh:2024fkg}
+R.~Ghosh, I.A. Shovkovy, {Electrical conductivity of hot relativistic plasma in
+  a strong magnetic field}.
+\newblock Phys. Rev. D \textbf{110}(9), 096009 (2024).
+\newblock \doi{10.1103/PhysRevD.110.096009}.
+\newblock {\href{https://arxiv.org/abs/2404.01388}{{arXiv:2404.01388}}}
+  {[hep-ph]}
 
 \bibitem{Vachaspati:1991nm}
 T.~Vachaspati, {Magnetic fields from cosmological phase transitions}.
@@ -228,6 +145,41 @@ G.S. Bali, F.~Bruckmann, G.~Endrodi, Z.~Fodor, S.D. Katz, S.~Krieg, A.~Schafer,
 \newblock {\href{https://arxiv.org/abs/1111.4956}{{arXiv:1111.4956}}}
   {[hep-lat]}
 
+\bibitem{Kaspi:2017fwg}
+V.M. Kaspi, A.~Beloborodov, {Magnetars}.
+\newblock Ann. Rev. Astron. Astrophys. \textbf{55}, 261--301 (2017).
+\newblock \doi{10.1146/annurev-astro-081915-023329}.
+\newblock {\href{https://arxiv.org/abs/1703.00068}{{arXiv:1703.00068}}}
+  {[astro-ph.HE]}
+
+\bibitem{Florkowski:2024cif}
+W.~Florkowski, \emph{{Spin hydrodynamics}}, in \emph{EMMI Workshop - Aspects of
+  Criticality II} (2024).
+\newblock \href{https://arxiv.org/abs/2411.19673}{arXiv:2411.19673} [hep-ph]
+
+\bibitem{Bhadury:2024whs}
+S.~Bhadury, W.~Florkowski, A.~Jaiswal, A.~Kumar, R.~Ryblewski, {Relativistic
+  magnetohydrodynamics with spin}.
+\newblock PoS \textbf{SPIN2023}, 241 (2024).
+\newblock \doi{10.22323/1.456.0241}.
+\newblock {\href{https://arxiv.org/abs/2401.16033}{{arXiv:2401.16033}}}
+  {[hep-ph]}
+
+\bibitem{Becattini:2024uha}
+F.~Becattini, M.~Buzzegoli, T.~Niida, S.~Pu, A.H. Tang, Q.~Wang, {Spin
+  polarization in relativistic heavy-ion collisions}.
+\newblock Int. J. Mod. Phys. E \textbf{33}(06), 2430006 (2024).
+\newblock \doi{10.1142/S0218301324300066}.
+\newblock {\href{https://arxiv.org/abs/2402.04540}{{arXiv:2402.04540}}}
+  {[nucl-th]}
+
+\bibitem{Singh:2024cub}
+S.K. Singh, R.~Ryblewski, W.~Florkowski, {Spin dynamics with realistic
+  hydrodynamic background for relativistic heavy-ion collisions}.
+\newblock (preprint)  (2024).
+\newblock {\href{https://arxiv.org/abs/2411.08223}{{arXiv:2411.08223}}}
+  {[hep-ph]}
+
 \bibitem{Elze:1980er}
 H.T. Elze, W.~Greiner, J.~Rafelski, {The relativistic Fermi gas revisited}.
 \newblock J. Phys. G \textbf{6}, L149--L153 (1980).
@@ -252,44 +204,19 @@ C.~Smorra, et~al., {A parts-per-billion measurement of the antiproton magnetic
 \newblock Nature \textbf{550}(7676), 371--374 (2017).
 \newblock \doi{10.1038/nature24048}
 
+\bibitem{Yang:2024ret}
+C.T. Yang, {Elementary Particles and Plasma in the First Hour of the Early
+  Universe}.
+\newblock Ph.D. thesis, Arizona U. (2024).
+\newblock HDL:\href{https://hdl.handle.net/10150/670280}{10150/670280}
+  \href{https://arxiv.org/abs/2401.09653}{arXiv:2401.09653} [hep-ph]
+
 \bibitem{Birrell:2014ona}
 J.~Birrell, {Non-Equilibrium Aspects of Relic Neutrinos: From Freeze-out to the
   Present Day}.
 \newblock Ph.D. thesis, Arizona U. (2014).
 \newblock HDL:\href{https://hdl.handle.net/10150/322969}{10150/322969}
   \href{https://arxiv.org/abs/1409.4500}{arXiv:1409.4500} [nucl-th]
-
-\bibitem{Sigl:1996dm}
-G.~Sigl, A.V. Olinto, K.~Jedamzik, {Primordial magnetic fields from
-  cosmological first order phase transitions}.
-\newblock Phys. Rev. D \textbf{55}, 4582--4590 (1997).
-\newblock \doi{10.1103/PhysRevD.55.4582}.
-\newblock
-  {\href{https://arxiv.org/abs/astro-ph/9610201}{{arXiv:astro-ph/9610201}}}
-
-\bibitem{Grayson:2022asf}
-C.~Grayson, M.~Formanek, J.~Rafelski, B.~Mueller, {Dynamic magnetic response of
-  the quark-gluon plasma to electromagnetic fields}.
-\newblock Phys. Rev. D \textbf{106}(1), 014011 (2022).
-\newblock \doi{10.1103/PhysRevD.106.014011}.
-\newblock {\href{https://arxiv.org/abs/2204.14186}{{arXiv:2204.14186}}}
-  {[hep-ph]}
-
-\bibitem{Shovkovy:2022bnd}
-I.A. Shovkovy, {Electromagnetic Response in an Expanding
-  Quark\textendash{}Gluon Plasma}.
-\newblock Particles \textbf{5}(4), 442--450 (2022).
-\newblock \doi{10.3390/particles5040034}.
-\newblock {\href{https://arxiv.org/abs/2210.00691}{{arXiv:2210.00691}}}
-  {[nucl-th]}
-
-\bibitem{Ghosh:2024fkg}
-R.~Ghosh, I.A. Shovkovy, {Electrical conductivity of hot relativistic plasma in
-  a strong magnetic field}.
-\newblock Phys. Rev. D \textbf{110}(9), 096009 (2024).
-\newblock \doi{10.1103/PhysRevD.110.096009}.
-\newblock {\href{https://arxiv.org/abs/2404.01388}{{arXiv:2404.01388}}}
-  {[hep-ph]}
 
 \bibitem{Bali:2014kia}
 G.S. Bali, F.~Bruckmann, G.~Endr\"odi, S.D. Katz, A.~Sch\"afer, {The QCD
@@ -314,29 +241,5 @@ J.~Birrell, M.~Formanek, A.~Steinmetz, C.T. Yang, J.~Rafelski, {Fermi-Dirac
 \newblock \doi{10.1007/s10773-024-05695-8}.
 \newblock {\href{https://arxiv.org/abs/2405.05287}{{arXiv:2405.05287}}}
   {[cond-mat.quant-gas]}
-
-\bibitem{Gross:1980br}
-D.J. Gross, R.D. Pisarski, L.G. Yaffe, {QCD and Instantons at Finite
-  Temperature}.
-\newblock Rev. Mod. Phys. \textbf{53}, 43 (1981).
-\newblock \doi{10.1103/RevModPhys.53.43}
-
-\bibitem{Linde:1980ts}
-A.D. Linde, {Infrared Problem in Thermodynamics of the Yang-Mills Gas}.
-\newblock Phys. Lett. B \textbf{96}, 289--292 (1980).
-\newblock \doi{10.1016/0370-2693(80)90769-8}
-
-\bibitem{Bellac:2011kqa}
-M.L. Bellac, \emph{Thermal Field Theory}.
-\newblock Cambridge Monographs on Mathematical Physics (Cambridge University
-  Press, Cambridge, UK, 2011).
-\newblock \doi{10.1017/CBO9780511721700}
-
-\bibitem{Kapusta:2006pm}
-J.I. Kapusta, C.~Gale, \emph{Finite-temperature field theory: Principles and
-  applications}.
-\newblock Cambridge Monographs on Mathematical Physics (Cambridge University
-  Press, Cambridge, UK, 2011).
-\newblock \doi{10.1017/CBO9780511535130}
 
 \end{thebibliography}
