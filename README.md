@@ -1,8 +1,8 @@
-## quark-magnetism
-Magnetized primordial quark-gluon plasma 
+## short-note-qcd
+Short note on spin magnetization in QGP 
 
 ## abstract
-Quark-gluon plasma (QGP), a high-energy state of matter characterized by deconfined quarks and gluons, played a pivotal role in the early moments of the Universe. This study investigates the thermodynamic and magnetic properties of QGP under the influence of strong magnetic fields present in the primordial Universe. We analyze the interplay between magnetic dipole moments and chemical potentials of light quarks (\(u, d, s\)), focusing on their contributions to baryon asymmetry and the overall magnetization of the QGP. Using a combination of relativistic Landau quantization and thermodynamic models, we derive expressions for the magnetization and other state variables, incorporating mass corrections and quantum chromodynamic (QCD) effects. Our findings offer insights into the influence of magnetization on the equilibrium properties of QGP, with implications for the baryogenesis and magnetization of the early Universe. This work establishes a framework for evaluating the role of magnetized plasmas in cosmological evolution and provides a detailed thermodynamic description of magnetized QGP.
+We outline the theory of spin QGP (quark-gluon plasma) magnetization. We explore the primordial epoch shortly after the Big-Bang within temperatures of \(150\) MeV to \(500\) MeV, also of interest to laboratory experiments. The ferro-magnetized fermion gas we consider consists of (light) quarks in laboratory QGP, and also leptons (electrons) for the case of the primordial Universe.  We show that a fully spin-polarized up-quark gas could generate cosmic magnetic fields of approximately \(10^{16}\) Tesla.  We suggest that even a weakly spin-polarized  gas would have a profound impact on properties of primordial Universe which can be explored in laboratory QGP experiments. We present details of how  the magnetization is obtained using a grand partition function approach. This requires evaluating slowly convergent magnetized Fermi-Dirac integrals.
 
 ## authors
 <a
@@ -39,7 +39,7 @@ alt="ORCID iD icon"/> Stefan Evans</a>,
 -->
 
 ## cite as
-Steinmetz, A. & Rafelski, J. Magnetized primordial quark-gluon plasma. In preparation (2024).
+Steinmetz, A. & Rafelski, J. Short note on spin magnetization in QGP. In Preparation (2025).
 
 ## doi/arXiv
 - Forthcoming.
