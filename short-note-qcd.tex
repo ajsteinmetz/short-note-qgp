@@ -89,7 +89,7 @@
 
 \begin{document}
 
-\title{Short note on spin magnetization in quark-gluon plasma
+\title{Short note on spin magnetization in QGP
     }
 
 \author{
@@ -102,7 +102,7 @@
     }
 
 \abstract{
-    We outline the theory of spin magnetization of the primordial quark-gluon plasma (QGP) that existed shortly after the Big Bang, focusing on a magnetized fermion gas of light quarks and electrons within temperatures of \(150\) MeV to \(500\) MeV. Using a grand partition function approach and evaluating magnetized Fermi-Dirac integrals, we calculate the magnetization and estimate that a fully polarized up quark gas could generate cosmic magnetic fields of approximately \(10^{16}\) Tesla. This field strength is significantly larger than the critical Schwinger field and exceeds magnetar surface fields by over three orders of magnitude. This suggest that even a weakly polarized quark gas would have a profound impact on the early Universe.
+    We outline the theory of spin QGP (quark-gluon plasma) magnetization. We explore the primordial epoch shortly after the Big-Bang within temperatures of \(150\) MeV to \(500\) MeV, also of interest to laboratory experiments. The ferro-magnetized fermion gas we consider consists of (light) quarks in laboratory QGP, and also leptons (electrons) for the case of the primordial Universe.  We show that a fully spin-polarized up-quark gas could generate cosmic magnetic fields of approximately \(10^{16}\) Tesla.  We suggest that even a weakly spin-polarized  gas would have a profound impact on properties of primordial Universe which can be explored in laboratory QGP experiments. We present details of how  the magnetization is obtained using a grand partition function approach. This requires evaluating slowly convergent magnetized Fermi-Dirac integrals. 
     }
 
 \maketitle
@@ -112,9 +112,18 @@
 \section{Introduction}
 \label{sec:introduction}
 %%%%%%%%%%%%%%%%%%%%%%%%
-Quark-gluon plasma (QGP) is a state of matter that existed microseconds after the Big Bang, where quarks and gluons were not confined within hadrons but existed as a free deconfined plasma~\cite{Letessier:2002ony,Rafelski:2015cxa,Rafelski:2023emw,Rafelski:2024fej,Shuryak:2004cy,HotQCD:2014kol}. QGP is also produced in high-energy heavy-ion collisions at the Relativistic Heavy Ion Collider (RHIC) and Large Hadron Collider (LHC)~\cite{Rafelski:1982pu,STAR:2005gfr,Palni:2024wdy,Grayson:2024okq,Mu:2025gtr}. While heavy-ion collisions provide our best experimental probe of the properties of primordial QGP, there are differences between the QGP produced in the early Universe (nearly baryon-symmetric) versus QGP produced in laboratory heavy-ion collisions (baryon-rich) as well as differing lepton abundance due to cosmic charge neutrality~\cite{Yang:2024ret}. Primordial QGP also differs from dense quark matter in astrophysical compact objects where the quark chemical potential far exceeds the electron chemical potential~\cite{Ghosh:2025sjn}.
+The color deconfined QGP (quark-gluon plasma) is studied in laboratory experiments now for several decades; this state of matter  existed in the Universe for nearly \(25~\mathrm{\mu s}\) after the Big-Bang~\cite{Rafelski:2019twp,Rafelski:2023emw,Rafelski:2024fej}. There are differences between the QGP produced in the early Universe versus QGP produced in the laboratory heavy-ion collisions. In this work of greatest importance is the presence of the lepton abundance in the early Universe. The laboratory formed QGP drops are too short-lived and too small to support it. Furthermore, analysis of particle production in laboratory experiments shows~\cite{Letessier:2005qe} how at highest available collisions energies we explore QGP in relatively low baryon density, near to the condition of primordial Universe. On the other hand, at lowest collision energy we study baryon-rich conditions also expected to be present in astrophysical compact objects~\cite{Ghosh:2025sjn}. At CERN laboratory in Geneva both these reaction energy limits are explored in ongoing ALICE, CMS, and NA61,  experiments, respectively. 
 
-Understanding the properties of QGP and cosmic magnetism is crucial for determining the conditions of the primordial Universe and the formation of matter as we observe it today~\cite{Uzan:2010pm,Uzan:2024ded,Grasso:2000wj,Widrow:2002ud,Kandus:2010nw,Ghosh:2024owm}.
+\begin{figure}
+	\begin{center}
+		\includegraphics[width=0.75\linewidth]{python/Figure_1.svg}
+	\end{center}
+	\caption{\label{Figure_1}TBW.}
+\end{figure}
+ 
+Recently we have explored the possibility that cosmic magnetism originates in spin polarization of electron-positron pairs~\cite{Steinmetz:2023nsc,Steinmetz:2023ucp} near to Big-Bang Nucleosynthesis~\cite{Grayson:2023flr,Grayson:2024uwg} epoch. We now begin to explore the possible role of light quark-antiquark pairs in QGP phase near to hadronization condition, pushing the possible source of magnetization further back in time to before matter hadronization. We now expand this effort consider the role of light quark magnetization in the primordial QGP Universe, focusing on the interplay between quarks, leptons, and magnetic fields. The presence of strong magnetic fields in the primordial QGP Universe could have significantly affected the equilibrium properties of Standard Model particles in the earliest moments after the Big-Bang~\cite{Durrer:2013pga,Subramanian:2015lua}. EM response of QGP is of considerable theoretical interest~\cite{Grayson:2022asf,Shovkovy:2022bnd,Ghosh:2024fkg} and such magnetic fields have long been thought to be connected to baryon asymmetry~\cite{Vachaspati:1991nm,Baym:1995fk}. Chiral magnetism in QGP has also been studied~\cite{Fukushima:2008xe,Boyarsky:2011uy,Bali:2011qj}.
+ 
+We first argue that quark magnetism in QGP cannot be ignored. In Table~\ref{tab:particle_properties}, we list the here relevant properties of select particle present in the QGP era in the Universe. The magnetic moment \(\mu\) is given in units of the Bohr magneton \(\mu_{B}\equiv e\hbar/2m_{e}\approx5.788\times10^{-11}\ \mathrm{MeV\;T}^{-1}\). The degrees of freedom (dof.) \(\mathfrak{g}=n_{S}\times n_{C}\) is the number of spin \(n_\mathrm{S}\) and color \(n_\mathrm{C}\) states available to the particle. We evaluated the magneton with gyromagnetic factor \(g=2\), while the strong interaction corrections suggest a larger value for quarks. For each particle seen in Table~\ref{tab:particle_properties} there is an antiparticle with opposite sign of magnetic moment. 
 \begin{table}[h]
     \centering
     \caption{Properties of select particles}
@@ -123,49 +132,54 @@ Understanding the properties of QGP and cosmic magnetism is crucial for determin
         \toprule
         \textbf{Particle} & \textbf{Mass} \([\approx\mathrm{MeV}]\) & \textbf{Charge} & \textbf{Magneton} \([\mu/\mu_{B}]\) & \(\mathfrak{g}\) \textbf{dof.} \\ 
         \midrule
-        Electron    \((e)\) & 0.511 & \(-1\)    & \(-1\)         & 2 \\
-        Up          \((u)\) & 2.2   & \(+2/3\)  & \(+0.155\)     & 6 \\
-        Down        \((d)\) & 4.7   & \(-1/3\)  & \(-0.0362\)    & 6 \\
-        Strange     \((s)\) & 96    & \(-1/3\)  & \(-0.00177\)   & 6 \\
-        Charm       \((c)\) & 1270  & \(+2/3\)  & \(+0.000268\)  & 6 \\ 
+        Electron  \((e)\)   & 0.511  & \(-1\)    & \(-1\)         & 2 \\
+        Muon      \((\mu)\) & 105.7  & \(-1\)    & \(-0.00484\)   & 2 \\
+        Tau       \((\mu)\) & 1776.9 & \(-1\)    & \(-0.000288\)   & 2 \\
+        \midrule
+        Up        \((u)\)   & 2.2    & \(+2/3\)  & \(+0.155\)     & 6 \\
+        Down      \((d)\)   & 4.7    & \(-1/3\)  & \(-0.0362\)    & 6 \\
+        Strange   \((s)\)   & 96     & \(-1/3\)  & \(-0.00177\)   & 6 \\
+        Charm     \((c)\)   & 1270   & \(+2/3\)  & \(+0.000268\)  & 6 \\ 
         \bottomrule
     \end{tabular}
 \end{table}
-In Table~\ref{tab:particle_properties}, we list the properties of select particles relevant to the QGP era. The magnetic moment \(\mu\) is given in units of the Bohr magneton \(\mu_{B}\equiv e\hbar/2m_{e}\approx0.5927\ \mathrm{MeV}^{-1}\). The degrees of freedom (dof.) \(\mathfrak{g}=n_{S}\times n_{C}\) is the number of spin \(n_\mathrm{S}\) and color \(n_\mathrm{C}\) states available to the particle. We evaluated the magneton with gyromagnetic factor \(g=2\).
 
-The electron-positron and light-quark gases were magnetically the most relevant particles in the QGP era due to their charge and low mass. Their number densities \(n_{i}\) would approximate a massless gas following the expression
+The electron-positron and light-quark gases, especially up-quarks, have been in the primordial Universe magnetically the most relevant particles in the QGP era due to their charge and low mass. The up-quark content is comparable to that of electrons since both are very relativistic particles considering \(k_{B}T=300\,\mathrm{MeV}\gg m_i c^{2}\). Their number densities \(n_{i}\) would follow a massless fermion gas 
 \begin{align}
-    n_{i}(T) = \frac{3\mathfrak{g}_{i}}{4\pi^{2}}\zeta(3)T^{3}\,,
+    n_{i}(T) = \mathfrak{g}_{i}\frac{3}{4}\frac{\zeta(3)}{\pi^{2}}\left(\frac{k_{B}T}{\hbar c}\right)^{3}\,,
 \end{align}
-where \(\zeta(3)\approx1.202\) is the Zeta function. If the dense gas of up (anti)quarks and electron(positrons) was fully polarized at a temperature of \(300\) MeV prior to hadronization, this would correspond to an estimated cosmic magnetization flux strength \(M = \mathcal{M}/V\) of
+where \(\zeta(3)\approx1.202\) is the Riemann-Zeta function. The ratio of contribution to magnetism is thus solely rooted in the magnetic moments of quarks and their greater degeneracy. The estimated total cosmic magnetic flux strength is therefore derived from the sum of external flux density, and the medium polarization of the most magnetically active particles \((i)\) and antiparticles \((\bar{i})\), given by
 \begin{align}
-    M_{u\bar{u}} = \mathcal{M}_{u\bar{u}}/V = \mu_{u}(n_{u}+n_{\bar{u}}) = \frac{\mu_{u}}{\mu_{B}}\mu_{B}\frac{3\mathfrak{g}_{u}}{2\pi^{2}}\zeta(3)T^{3} & \sim 1.391\times10^{16}\ \mathrm{T}\,,\\
-    M_{e\bar{e}} = \frac{\mu_{e}}{\mu_{u}} \frac{\mathfrak{g}_{e}}{\mathfrak{g}_{u}} M_{u\bar{u}} = & \sim 2.991\times10^{16}\ \mathrm{T}\,,
+    \mathcal{B}_\mathrm{total}=\mathcal{B}_\mathrm{ext.}+\mu_{0}\sum_{i} M_{i\bar{i}}\,,
 \end{align}
-where \(\mathcal{M}\) is the magnetization. While this is a overly simplified calculation, it illustrates the scale at which spin magnetization may be relevant. These values can also be understood as \(\sim 10^{6}\) times the critical magnetic field strength \(\mathcal{B}_\mathrm{C}\equiv m_{e}^{2}/e\ \approx 0.862\ \mathrm{MeV}^{2}\) and \(\sim 10^5\) times stronger than the upper estimated surface field strength of magnetars~\cite{Kaspi:2017fwg}. This suggests that even a weakly polarized primordial gas would have a significant impact on the early Universe, with light quarks contributing on par with leptons. We can understand this as despite having a smaller magneton, the light quarks have a larger number density, due to added color degrees of freedom, and therefore contribute more to spin magnetization than otherwise expected.
+where \(M=\mathcal{M}/V\) is the magnetic moment density, \(\mathcal{M}\) is the magnetization and \(\mu_{0}\) is the vacuum permeability (not to be confused with magnetic moment). Therefore at \(k_{B}T=300~\mathrm{MeV}\) for up-quark and electrons, we obtain as an upper bound
+\begin{align}
+    \mu_{0}M_{u\bar{u}} = \mu_{0}\mathcal{M}_{u\bar{u}}/V = \mu_{0}\mu_{u}(n_{u}+n_{\bar{u}})  \simeq 6.958\times10^{15}~\mathrm{T} \,,\qquad
+    M_{e\bar{e}}=M_{u\bar{u}}\frac{\mathfrak{g}_{e}}{\mathfrak{g}_{u}} \frac{\mu_{e}}{\mu_{u}} \simeq 2.15 M_{u\bar{u}}
+\end{align}
+In the last estimate we assumed that all strongly interacting quark magnetic moments align in a suitable manner with the electron generated magnetic field to amplify it further. This type of ferromagnetic alignment  amplifies the lepton generated magnetization  \(\sim 10^{6}\) times the critical magnetic field strength \(\mathcal{B}_\mathrm{C}\equiv m_{e}^{2}c^{2}/e\hbar\approx 4.41\times10^{9}\ \mathrm{T}\). This is \(\sim 10^5\) times stronger than the upper estimated surface field strength of magnetars~\cite{Kaspi:2017fwg}.
 
-In Ref.~\cite{Steinmetz:2023nsc,Steinmetz:2023ucp}, we explored the magnetic properties of the magnetized electron-positron plasma around the period of Big Bang Nucleosynthesis~\cite{Grayson:2023flr,Grayson:2024uwg} as well as neutrino flavor~\cite{Rafelski:2023zgp}. We expand those efforts to now consider the thermodynamic properties of a magnetized QGP in the primordial Universe, focusing on the interplay between quarks, leptons, and magnetic fields. We provide an theoretical outline and point to where future efforts may be directed. The presence of strong magnetic fields in the primordial Universe could have significantly affected the equilibrium properties of Standard Model particles in the earliest moments after the Big Bang~\cite{Durrer:2013pga,Subramanian:2015lua}. Such magnetic fields have long been thought to be connected to baryon asymmetry~\cite{Vachaspati:1991nm,Baym:1995fk}. Chiral magnetism in QGP has also been studied~\cite{Fukushima:2008xe,Boyarsky:2011uy,Bali:2011qj}. For recent work on spin polarization modeled in relativistic hydrodynamics, see~\cite{Florkowski:2024cif,Bhadury:2024whs,Becattini:2024uha,Singh:2024cub}
+This discussion suggests that even a weakly polarized primordial lepton-quark Fermi gas would have a significant impact on the early Universe, with light quarks contributing on par with leptons which while dominant (within about a factor of 2) are not the sole source of Fermi spin magnetization. We provide in the following an theoretical outline and point to where future efforts may be directed. For recent work on spin polarization modeled in relativistic hydrodynamics, see~\cite{Florkowski:2024cif,Bhadury:2024whs,Becattini:2024uha,Singh:2024cub}.
 
 %%%%%%%%%%%%%%%%%%%%%%%%
 \section{Magnetization of a polarized gas}
 \label{sec:magnetization}
 %%%%%%%%%%%%%%%%%%%%%%%%
-We consider a free but magnetized fermion gas in the temperature range \(500\MeV>T>150\MeV\) composed of light-quark species \(q \in {u,d}\) and electrons. As the magneton scales with \(\mu \propto 1/m\), these species are magnetically the most relevant due to their lighter masses (see Table~\ref{tab:particle_properties}) and consequently larger magnetic moments. For relativistic species~\cite{Elze:1980er}, under conditions of thermal and chemical equilibrium (as was the case in the primordial Universe) the chemical potential \(\eta\) of each particle is opposite in sign to that of its antiparticle
+We consider a free but magnetized fermion gas in the temperature range \(500\MeV>T>150\MeV\) composed of light-quark species \(q \in {u,d}\) and electrons (and their antiparticles). As the magneton scales with \(\mu \propto 1/m\), these species are magnetically the most relevant due to their lighter masses (see Table~\ref{tab:particle_properties}) and consequently larger magnetic moments. For relativistic species~\cite{Elze:1980er}, under conditions of thermal and chemical equilibrium (as was the case in the primordial Universe) the chemical potential \(\eta\) of each particle is opposite in sign to that of its antiparticle
 \begin{align}
     \eta_{q}=T\ln\lambda_{q}\,,\qquad
     \lambda_{q}=1/\lambda_{\bar{q}}\,,\qquad
     \eta_{q}=-\eta_{\bar{q}}\,,
 \end{align}
-where \(\lambda\) is the fugacity. The magnetic dipole of a particle is also opposite in sign to its antiparticle $\mu_{i}=-\mu_{\bar{i}}$ as charge is flipped. Any deviation from this condition would represent a violation of CPT~\cite{Colladay:1996iz,Bluhm:1997ci,BASE:2016yuo}. During this period, particle-antiparticle pairs of (anti)quarks were freely produced and annihilated through photon-mediated processes, represented by $q+\bar{q}\rightleftharpoons2\gamma$. Since the Universe expanded very slowly compared to collision reaction times during the QGP epoch~\cite{Rafelski:2023emw,Yang:2024ret}, the expansion can be considered adiabatic, conserving entropy.
+where \(\lambda\) is the fugacity. The magnetic dipole of a particle is also opposite in sign to its antiparticle $\mu_{i}=-\mu_{\bar{i}}$ as charge is flipped. Any deviation from this condition would represent a violation of CPT~\cite{Colladay:1996iz,Bluhm:1997ci,BASE:2016yuo}. During this period, particle-antiparticle pairs of (anti)quarks were freely produced and annihilated through photon- and gluon-mediated processes, represented by \(q+\bar{q}\rightleftharpoons2\gamma\) and \(q+\bar{q}\rightleftharpoons2g\). We note that the entropy conserving expansion of the Universe is extremely slow compared to the relevant collision reaction times during the QGP epoch~\cite{Yang:2024ret}.
 
 Accounting for the internal energy $U$ of magnetized QGP, including the energies of neutrinos~\cite{Birrell:2014ona}, involves the following properties: 
 \begin{itemize}
-    \item[(a)] The energy of adding or removing a baryon $\eta_{B}B$,
+    \item[(a)] The energy of adding or removing a baryon $\eta_{B}B$ where \(B\) is baryon number,
     \item[(b)] the energy of adding or removing a lepton $\eta_{\ell}(N_{\ell}-N_{\ell})$ with $\ell\in {e,\nu}$, 
     \item[(c)] the magnetic energy $\mathcal{M}\mathcal{B}$ where $\mathcal{M}$ is the net magnetization and $\mathcal{B}$ is the magnetic field strength and
     \item[(d)] the electromagnetic energy density generated by the external magnetic field.
 \end{itemize}
-Magnetic field strength $\mathcal{B}$ should not be confused with baryon number $B$. Additionally, the internal energy and chemical potential of QGP is sensitive to electric fields which cause a statistical Coulomb distortion~\cite{Sigl:1996dm,Letessier:2002ony}. For the purpose of clarity and to maintain focus on magnetism, electrical fields will be omitted. See Ref.~\cite{Grayson:2022asf,Shovkovy:2022bnd,Ghosh:2024fkg} for discussion on QGP electrical conductivity and EM response.
 
 The dependency of $U$ on $\mathcal{M}$ reflects that $\mathcal{B}$ is the incremental energy cost to change the magnetization by flipping the spin of a particle~\cite{Bali:2014kia}. Therefore, this makes magnetization $\mathcal{M}$ an extensive property of the system which changes which particle number. We see this explicitly by writing the magnetization as the sum over all particles $i\in{1,\ldots,k}$
 \begin{align}
@@ -195,7 +209,7 @@ The net spin-asymmetry warrants is the asymmetry of particles and antiparticles 
 \section{Magnetized grand partition function}
 \label{sec:partition}
 %%%%%%%%%%%%%%%%%%%%%%%%
-The partition function allows us to calculate various thermodynamic quantities by taking appropriate derivatives of $\mathcal{F}$. In the temperature range considered $(500\MeV>T>150\MeV)$, the lightest quarks act as essentially massless particles with only the strange quark requiring significant mass corrections. It is worth remarking on the uniqueness of the situation: As magnetic moment scales inverse with mass, it is the particles which are most massless in character which contribute most to magnetization.
+The partition function allows us to calculate various thermodynamic quantities by taking appropriate derivatives of $\mathcal{F}$. In the temperature range considered $(500\MeV>T>150\MeV)$, the lightest quarks act as essentially massless particles with only the strange quark requiring significant mass corrections. It is worth remarking on the uniqueness of the situation: As magnetic moment scales inverse with mass, it is the particles which are most massless in character which contribute most to magnetization. The following section is written in natural units of \(\hbar=c=k_{B}=1\).
 
 The relevant contributions to the magnetized primordial plasma arise from the quarks, gluons, leptons, and the vacuum. The grand potential in terms of the grand partition function $\ln\mathcal{Z}$ is
 \begin{align}
@@ -204,8 +218,8 @@ The relevant contributions to the magnetized primordial plasma arise from the qu
     \ln\mathcal{Z}_{\mathrm{total}} &=
     \ln\mathcal{Z}_{\mathrm{quarks}} +
     \ln\mathcal{Z}_{\mathrm{gluons}} +
-    \ln\mathcal{Z}_{\mathrm{vac.}} + 
-    \ln\mathcal{Z}_{\mathrm{leptons}}+\ldots 
+    \ln\mathcal{Z}_{\mathrm{leptons}}+
+    \ln\mathcal{Z}_{\mathrm{vac.}}+\ldots 
 \end{align}
 
 We consider a homogeneous magnetic field domain defined along the $z$-axis with magnetic field magnitude $\mathcal{B}$. The volume $V=L^{3}$ is not necessarily infinite and is to be considered the size of the homogeneous domain such that $\partial\mathcal{B}_{i}/\partial x_{j}\approx0$ for \(i,j \in {1,2,3}\). For a fermion species of charge $Q$, mass $m$, and g-factor $g$, the energy eigenvalues of the magnetized particles is given by~\cite{Steinmetz:2018ryf}
@@ -213,7 +227,7 @@ We consider a homogeneous magnetic field domain defined along the $z$-axis with 
     \label{eq:energystates}
     E(p_{z},n,s)=\sqrt{m^{2}+p_{z}^{2}+2|Q|\mathcal{B}\left(n+\frac{1}{2}-\frac{g}{2}s\right)}\,,
 \end{align}
-where $E$ are the relativistic Landau energy eigenvalues. The micro-state energies depend on longitudinal momentum \(p_{z}\), spin $s\in\pm1/2$, and orbital $n\in0,1,2,3,\ldots$ Landau quantum number. It is helpful to introduce a spin-dependent auxiliary mass $m_{T}(s)$ via
+where $E$ are the relativistic Landau energy eigenvalues. The micro-state energies depend on longitudinal momentum \(p_{z}\), spin $s\in\pm1/2$, and orbital $n\in0,1,2,3,\ldots$ Landau quantum number. It is helpful to introduce a spin-dependent auxiliary mass $m(s)$ via
 \begin{align}
     \label{eq:spinmass}
     m^{2}(s) &\equiv m^{2} - |Q|\mathcal{B}\,g s\,.
@@ -223,12 +237,12 @@ The power and utility of the partition function in statistical systems is found 
 \begin{align}
     F\left(E - \sigma\eta\right) = \frac{1}{e^{(E - \sigma\eta)/T} + 1}\,.
 \end{align}
-We can express \req{eq:parts} by utilizing Euler-Maclaurin integration (see details in Ref.~\cite{Steinmetz:2023nsc,Rafelski:2024fej}) writing the partition function in spherical coordinates \(d\mathbf{p}^{3}=4\pi p^{2}dp\). We substitute coordinates and integrate by parts yielding
+We can express \req{eq:parts} by utilizing Euler-Maclaurin integration (see details in Ref.~\cite{Steinmetz:2023nsc}) writing the partition function in spherical coordinates \(d\mathbf{p}^{3}=4\pi p^{2}dp\). We substitute coordinates and integrate by parts yielding
 \begin{align}
     \label{eq:partition_byparts}
     \ln\mathcal{Z} &= \frac{2 n_\mathrm{C}V}{(2\pi)^{2}} \sum_{s}^{\pm1/2}\sum_{\sigma}^{\pm1}\int_{0}^{\infty} \frac{dp}{3T} \, \frac{p^4}{E}F\left(E - \sigma\eta\right)\,.
 \end{align}
-The form of the partition function expressed by \req{eq:partition_byparts} more directly lets us evaluate thermodynamic quantities in terms of Fermi integrals~\cite{Elze:1980er,Birrell:2024bdb}. \req{eq:partition_byparts} also sums over (anti)matter states \(\sigma \in {\pm1}\). However, integrating over momentum is not an ideal description as relativistic expansions in momentum yield series that are only semi-convergent. These infrared divergences in thermal field theory are associated with long-wavelength (low-momentum) modes that are not properly accounted for in the perturbative expansion~\cite{Gross:1980br,Linde:1980ts,Bellac:2011kqa,Kapusta:2006pm}.
+The form of the partition function expressed by \req{eq:partition_byparts} more directly lets us evaluate thermodynamic quantities in terms of Fermi integrals~\cite{Elze:1980er,Birrell:2024bdb}. \req{eq:partition_byparts} also sums over (anti)matter states \(\sigma \in {\pm1}\). However, integrating over momentum is not an ideal description as relativistic expansions in momentum yield series that are only semi-convergent. 
 
 %%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Dimensionless change of variables}
@@ -314,20 +328,26 @@ Substituting the expression for \(\partial \ln \mathcal{Z}/\partial m_{T}\) into
     \notag
     \mathcal{M} &= -\frac{g|Q|}{2 T}\cdot\frac{2 n_\mathrm{C} V T^{3}}{3 (2\pi)^{2}} \sum_{s}^{\pm1/2} s \sum_{\sigma}^{\pm1} \int_{m_{T}(s)}^{\infty} dE_{T} \, \left(E_{T}^{2} - m_{T}^{2}(s)\right)^{3/2} \\
     \label{eq:mag_form}
-    &\times\left[ \frac{F(E_{T} - \sigma\eta_{T})\left(1 - F(E_{T} - \sigma\eta_{T})\right)}{E_{T}} + \frac{F(E_{T} - \sigma\eta_{T})}{E_{T}^{2}} \right].
+    &\times
+    \left[ \frac{F(E_{T} - \sigma\eta_{T})\left(1 - F(E_{T} - \sigma\eta_{T})\right)}{E_{T}} + \frac{F(E_{T} - \sigma\eta_{T})}{E_{T}^{2}} \right].
 \end{align}
-Much how we expect the free energy to be \(\ln\mathcal{Z}\sim T^{3}\), we see the magnetization is \(\mathcal{M}\sim T^{2}\) via dimensional analysis. This is in agreement to our prior work~\cite{Steinmetz:2023nsc,Steinmetz:2023ucp} where we evaluated the magnetization in the Boltzmann limit. The benefit of expressing the magnetization in the form of \req{eq:mag_form} is that the integrand within the brackets \([\ldots]\) entirely contains the Fermi-Dirac distribution scaled by energy without mass (or magnetic fields) except as a boundary condition on the integration. This makes it suitable for numerical evaluation and comparison to the Boltzmann limit which will be the subject of future work.
+Much how we expect the free energy to be \(\ln\mathcal{Z}\sim T^{3}\), we see the magnetization is \(\mathcal{M}\sim T^{2}\) via dimensional analysis. This is in agreement to our prior work~\cite{Steinmetz:2023nsc,Steinmetz:2023ucp} where we evaluated the magnetization in the Boltzmann limit~\cite{Steinmetz:2023nsc} with \(T\ll m_e\). The benefit of expressing the magnetization in the form of \req{eq:mag_form} is that the integrand within the brackets \([\ldots]\) entirely contains the Fermi-Dirac distribution scaled by energy without mass (or magnetic fields) except as a boundary condition on the integration. This makes it suitable for numerical evaluation and comparison to the Boltzmann limit which will be the subject of future work.
 
 %%%%%%%%%%%%%%%%%%%%%%%%
 \section{Conclusions}
 \label{sec:conclusions}
 %%%%%%%%%%%%%%%%%%%%%%%%
-In this work we have developed a theoretical framework for evaluating the spin magnetization of a quark-gluon plasma (QGP) under conditions akin to those of the primordial Universe. By employing a grand partition function formalism (see \req{eq:parts}) and rigorously evaluating magnetized Fermi-Dirac integrals, both in their standard and dimensionless forms (Eqs.\,(\ref{eq:dimensionless_partition})--(\ref{eq:dimensionless_partition2})), we derived explicit expressions that capture the dependence of the magnetization on temperature, particle masses, and magnetic field strength. Notably, our analysis shows that the magnetization scales as \(T^2\) (cf. \req{eq:mag_form}), in agreement with the expected thermodynamic behavior of a relativistic gas in three spatial dimensions.
+In this work we have proposed a theoretical framework for evaluating the spin magnetization of a quark-gluon plasma (QGP) under conditions akin to those of the primordial Universe. By employing a grand partition function formalism (see \req{eq:parts}) and rigorously evaluating magnetized Fermi-Dirac integrals, both in their standard and dimensionless forms (Eqs.\,(\ref{eq:dimensionless_partition})--(\ref{eq:dimensionless_partition2})), we derived explicit expressions that capture the dependence of the magnetization on temperature, particle masses, and magnetic field strength. Notably, our analysis shows that the magnetization scales as \(T^2\) (cf. \req{eq:mag_form}), in agreement with the expected thermodynamic behavior of a relativistic gas in three spatial dimensions.
 
-Our estimates indicate that even a modest degree of spin polarization in the light-quark and electron-positron sectors could lead to cosmic magnetic fields of enormous magnitude. Ferromagnetic-like response, if fascilitated by the strong coupling among quarks, would potentially generate fields on the order of \(10^{16}\) Tesla. These values exceed both the critical Schwinger field and the characteristic surface fields of magnetars by several orders of magnitude, underscoring the potential significance of spin magnetization in the primordial plasma.
+Our estimates indicate that even a modest degree of spin polarization in the light-quark and electron-positron sectors could lead to cosmic magnetic fields of enormous magnitude. Ferromagnetic-like response, if facilitated by the strong coupling among quarks, would potentially generate fields on the order of \(10^{16}\) Tesla. These values exceed both the critical Schwinger field and the characteristic surface fields of magnetars by several orders of magnitude, underscoring the potential significance of spin magnetization in the primordial plasma. However, such fields remain in the bounds found at this high temperature extrapolating back in time the large scale magnetic fields of present day. REFERENCE OR ESTIMATE OR FIGURE NEEDED?????
 
 While the present treatment considers an idealized, free fermion gas, with the magnetization defined in \req{eq:dipole}, it provides a starting point for future investigations incorporate additional physical effects such as QCD interactions, finite volume corrections, and non-equilibrium dynamics. Moreover, exploring the interplay between spin magnetization and other cosmological processes (such as baryogenesis, leptogenesis, and the evolution of large-scale magnetic fields) remains an important avenue for further research.
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\textbf{Acknowledgment:} 
+One of us (JR) thanks Tamas Bir\'o and the Wigner Hun-Ren Research Center for their kind hospitality in Budapest during the PP2024 conference, supported by NKFIH (Hungarian National Office for Research, Development and Innovation) under awards 2022-2.1.1-NL-2022-00002 and 2020-2.1.1-ED-2024-00314. This meeting and the related research report motivate the presentation of these recently obtained results. This work is not supported by any sponsor.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%
 \bibliographystyle{sn-aps}
 \bibliography{short-note-qcd.bib}
