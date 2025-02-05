@@ -3,6 +3,52 @@
 \providecommand{\urlprefix}{URL }
 \providecommand{\doi}[1]{\url{https://doi.org/#1}}
 
+\bibitem{Steinmetz:2023nsc}
+A.~Steinmetz, C.T. Yang, J.~Rafelski, {Matter-antimatter origin of cosmic
+  magnetism}.
+\newblock Phys. Rev. D \textbf{108}(12), 123522 (2023).
+\newblock \doi{10.1103/PhysRevD.108.123522}.
+\newblock {\href{https://arxiv.org/abs/2308.14818}{{arXiv:2308.14818}}}
+  {[hep-ph]}
+
+\bibitem{Steinmetz:2023ucp}
+A.~Steinmetz, {Modern topics in relativistic spin dynamics and magnetism}.
+\newblock Ph.D. thesis, Arizona U. (2023).
+\newblock HDL:\href{https://hdl.handle.net/10150/670301}{10150/670301}
+  \href{https://arxiv.org/abs/2310.07193}{arXiv:2310.07193} [hep-ph]
+
+\bibitem{Grayson:2023flr}
+C.~Grayson, C.T. Yang, M.~Formanek, J.~Rafelski, {Electron\textendash{}positron
+  plasma in BBN: Damped-dynamic screening}.
+\newblock Annals Phys. \textbf{458}, 169453 (2023).
+\newblock \doi{10.1016/j.aop.2023.169453}.
+\newblock {\href{https://arxiv.org/abs/2307.11264}{{arXiv:2307.11264}}}
+  {[astro-ph.CO]}
+
+\bibitem{Grayson:2024uwg}
+C.~Grayson, C.T. Yang, M.~Formanek, J.~Rafelski, {Self-consistent Strong
+  Screening Applied to Thermonuclear Reactions}.
+\newblock Astrophys. J. \textbf{976}(1), 31 (2024).
+\newblock \doi{10.3847/1538-4357/ad7dee}.
+\newblock {\href{https://arxiv.org/abs/2406.13055}{{arXiv:2406.13055}}}
+  {[nucl-th]}
+
+\bibitem{Planck:2015zrl}
+P.A.R. Ade, et~al., {Planck 2015 results. XIX. Constraints on primordial
+  magnetic fields}.
+\newblock Astron. Astrophys. \textbf{594}, A19 (2016).
+\newblock \doi{10.1051/0004-6361/201525821}.
+\newblock {\href{https://arxiv.org/abs/1502.01594}{{arXiv:1502.01594}}}
+  {[astro-ph.CO]}
+
+\bibitem{Jedamzik:2018itu}
+K.~Jedamzik, A.~Saveliev, {Stringent Limit on Primordial Magnetic Fields from
+  the Cosmic Microwave Background Radiation}.
+\newblock Phys. Rev. Lett. \textbf{123}(2), 021301 (2019).
+\newblock \doi{10.1103/PhysRevLett.123.021301}.
+\newblock {\href{https://arxiv.org/abs/1804.06115}{{arXiv:1804.06115}}}
+  {[astro-ph.CO]}
+
 \bibitem{Rafelski:2019twp}
 J.~Rafelski, {Discovery of Quark-Gluon-Plasma: Strangeness Diaries}.
 \newblock Eur. Phys. J. ST \textbf{229}(1), 1--140 (2020).
@@ -39,36 +85,6 @@ R.~Ghosh, I.A. Shovkovy, {Neutrino energy and momentum emission from magnetized
 \newblock (preprint)  (2025).
 \newblock {\href{https://arxiv.org/abs/2501.03318}{{arXiv:2501.03318}}}
   {[hep-ph]}
-
-\bibitem{Steinmetz:2023nsc}
-A.~Steinmetz, C.T. Yang, J.~Rafelski, {Matter-antimatter origin of cosmic
-  magnetism}.
-\newblock Phys. Rev. D \textbf{108}(12), 123522 (2023).
-\newblock \doi{10.1103/PhysRevD.108.123522}.
-\newblock {\href{https://arxiv.org/abs/2308.14818}{{arXiv:2308.14818}}}
-  {[hep-ph]}
-
-\bibitem{Steinmetz:2023ucp}
-A.~Steinmetz, {Modern topics in relativistic spin dynamics and magnetism}.
-\newblock Ph.D. thesis, Arizona U. (2023).
-\newblock HDL:\href{https://hdl.handle.net/10150/670301}{10150/670301}
-  \href{https://arxiv.org/abs/2310.07193}{arXiv:2310.07193} [hep-ph]
-
-\bibitem{Grayson:2023flr}
-C.~Grayson, C.T. Yang, M.~Formanek, J.~Rafelski, {Electron\textendash{}positron
-  plasma in BBN: Damped-dynamic screening}.
-\newblock Annals Phys. \textbf{458}, 169453 (2023).
-\newblock \doi{10.1016/j.aop.2023.169453}.
-\newblock {\href{https://arxiv.org/abs/2307.11264}{{arXiv:2307.11264}}}
-  {[astro-ph.CO]}
-
-\bibitem{Grayson:2024uwg}
-C.~Grayson, C.T. Yang, M.~Formanek, J.~Rafelski, {Self-consistent Strong
-  Screening Applied to Thermonuclear Reactions}.
-\newblock Astrophys. J. \textbf{976}(1), 31 (2024).
-\newblock \doi{10.3847/1538-4357/ad7dee}.
-\newblock {\href{https://arxiv.org/abs/2406.13055}{{arXiv:2406.13055}}}
-  {[nucl-th]}
 
 \bibitem{Durrer:2013pga}
 R.~Durrer, A.~Neronov, {Cosmological Magnetic Fields: Their Generation,
@@ -144,6 +160,14 @@ G.S. Bali, F.~Bruckmann, G.~Endrodi, Z.~Fodor, S.D. Katz, S.~Krieg, A.~Schafer,
 \newblock \doi{10.1007/JHEP02(2012)044}.
 \newblock {\href{https://arxiv.org/abs/1111.4956}{{arXiv:1111.4956}}}
   {[hep-lat]}
+
+\bibitem{Ferrer:2010wz}
+E.J. Ferrer, V.~de~la Incera, J.P. Keith, I.~Portillo, P.L. Springsteen,
+  {Equation of State of a Dense and Magnetized Fermion System}.
+\newblock Phys. Rev. C \textbf{82}, 065802 (2010).
+\newblock \doi{10.1103/PhysRevC.82.065802}.
+\newblock {\href{https://arxiv.org/abs/1009.3521}{{arXiv:1009.3521}}}
+  {[hep-ph]}
 
 \bibitem{Kaspi:2017fwg}
 V.M. Kaspi, A.~Beloborodov, {Magnetars}.
