@@ -113,16 +113,26 @@ Recently we have explored the possibility that cosmic magnetism originates in sp
 \begin{figure}%[b]
 \centerline{
 \includegraphics[width=0.90\columnwidth]{Figure_1_v2.pdf}}
-\caption{\label{Figure_1}Temperature dependence of several key magnetic field contributions in the early universe during the QGP epoch.}
+\caption{\label{Figure_1}Temperature dependence of several key magnetic field contributions in the early universe during the QGP epoch. {\color{blue}The PMF range was obtained from \req{eq:PMF}. The magnetic field strengths from spin polarization \(\mathcal{B}_{e\bar{e}}\) and \(\mathcal{B}_{u\bar{u}}\) were determined by \req{eq:QuarkMagnetization} and \req{eq:ElectronMagnetization} respectively.}}
 \end{figure}
 
-This is shown in Fig.~\ref{Figure_1} over the temperature range 50 to 500~MeV. The gray-shaded region bounded by black lines represents the allowed primordial magnetic field (PMF) range, obtained by scaling today’s intergalactic magnetic field bounds (\(\mathcal{B}_{0} = 10^{-20}-10^{-12}\)~T)~\cite{Planck:2015zrl,Jedamzik:2018itu}. For details, see Ref.~\cite{Steinmetz:2023nsc}. The black dash-dotted horizontal line in Fig.~\ref{Figure_1} marks the Schwinger critical field, \(\mathcal{B}_\mathrm{C}\approx4.41\times10^{9}~\mathrm{T}\). Superimposed are the maximum quark magnetization (red curve) and electron magnetization (blue curve) which are calculated below. The quark magnetization estimation ends well before hadronization as qualitatively indicated by the red dashed curve. Hadronization is marked by the green solid vertical line at \(T_\mathrm{H}\approx150\MeV\). The drop-off of \(\mathcal{B}_{q\bar{q}}\) occurs because of the phase transformation of QGP at \(T_\mathrm{H}\) to much less magnetically relevant heavy hadrons.
+This is shown in Fig.~\ref{Figure_1} over the temperature range 50 to 500~MeV. The gray-shaded region bounded by black lines represents the allowed primordial magnetic field (PMF) range, obtained by scaling today’s intergalactic magnetic field bounds (\(\mathcal{B}_{0} = 10^{-20}-10^{-12}\)~T)~\cite{Planck:2015zrl,Jedamzik:2018itu} {\color{blue}via
+\begin{equation}
+\label{eq:PMF}
+\mathcal{B}_{\rm PMF}(T) = \mathcal{B}_{0}\frac{T^{2}}{T_{0}^{2}}\,,\qquad
+k_{B}T_{0} = 2.35\times10^{-4}\eV\,.
+\end{equation}
+which preserves magnetic flux and where \(T_{0}\) is the contemporary temperature of the CMB today.} For details, see Ref.~\cite{Steinmetz:2023nsc}. The black dash-dotted horizontal line in Fig.~\ref{Figure_1} marks the Schwinger critical field, \(\mathcal{B}_\mathrm{C}\approx4.41\times10^{9}~\mathrm{T}\). Superimposed are the maximum quark magnetization (red curve) and electron magnetization (blue curve) which are calculated below. The quark magnetization estimation ends well before hadronization as qualitatively indicated by the red dashed curve. Hadronization is marked by the green solid vertical line at \(T_\mathrm{H}\approx150\MeV\). The drop-off of \(\mathcal{B}_{q\bar{q}}\) occurs because of the phase transformation of QGP at \(T_\mathrm{H}\) to much less magnetically relevant heavy hadrons.
 
 We understand the primordial deconfined QGP phase of matter due to several decades of experimental effort; this new state of matter existed in the Universe for nearly \(25~\mathrm{\mu s}\) after the Big-Bang~\cite{Rafelski:2019twp,Rafelski:2023emw,Rafelski:2024fej}. However, there are differences between the QGP produced in the early Universe versus QGP produced in laboratory heavy-ion collisions. Of greatest importance is the presence of the lepton abundance in the early Universe. Laboratory formed QGP drops are too short-lived and too small to support a comparable high-density of leptons. The net baryon content of QGP-drops formed in laboratory experiments can also be vastly different from early Universe conditions where baryon-antibaryon asymmetry is nano-scale. A high QGP baryon content is found at relatively low energy heavy-ion collisions near to the presumed threshold for QGP formation~\cite{Letessier:2005qe}. In typically fixed target CERN experiments (NA61 today), baryon-rich conditions are explored and also expected to be present in astrophysical compact objects~\cite{Ghosh:2025sjn}. However, as the collision energy increases towards the highest available today, the incoming nuclear valance quarks escape from the QGP drop: CERN-LHC created QGP-drops as observed by ALICE and CMS experiments have relatively low net baryon density mirroring the prevailing conditions in the primordial Universe~\cite{Letessier:2005qe}. 
 
 In this work we expand our prior spin magnetization study~\cite{Steinmetz:2023nsc,Steinmetz:2023ucp} to consider the role of light-quark magnetization in the primordial QGP Universe, focusing on the interplay between quarks, leptons, and magnetic fields. The presence of strong magnetic fields in the primordial QGP Universe could have significantly affected the equilibrium properties of Standard Model particles in the earliest moments after the Big-Bang~\cite{Durrer:2013pga,Subramanian:2015lua}. EM response of QGP is of considerable theoretical interest~\cite{Grayson:2022asf,Shovkovy:2022bnd,Ghosh:2024fkg} and such magnetic fields have long been thought to be connected to baryon asymmetry~\cite{Vachaspati:1991nm,Baym:1995fk}. Chiral magnetism in QGP has also been studied~\cite{Fukushima:2008xe,Boyarsky:2011uy,Bali:2011qj}.
 
-We first argue that quark magnetism in cosmic QGP cannot be ignored. In Table~\ref{tab:particle_properties}, we list the relevant properties of select particles present in the QGP epoch of the Universe. The magnetic moment \(\mu\) is given in units of the Bohr magneton \(\mu_{B}\equiv e\hbar/2m_{e}\approx5.788\times10^{-11}\ \mathrm{MeV\;T}^{-1}\). The degrees of freedom (dof.) \(\mathfrak{g}=n_{S}\times n_{C}\) is the number of spin \(n_\mathrm{S}\) and color \(n_\mathrm{C}\) states available to the particle. We evaluate the magneton with gyromagnetic factor \(g=2\), while strong interaction corrections suggest a larger value for quarks. For each particle seen in Table~\ref{tab:particle_properties}, there is an antiparticle with opposite sign of magnetic moment. 
+%%%%%%%%%%%%%%%%%%%%%%%%
+{\color{blue}\section{Estimation of plasma spin magnetization}
+\label{sec:estimation}
+%%%%%%%%%%%%%%%%%%%%%%%%
+}\noindent We first argue that quark magnetism in cosmic QGP cannot be ignored. In Table~\ref{tab:particle_properties}, we list the relevant properties of select particles present in the QGP epoch of the Universe. The magnetic moment \(\mu\) is given in units of the Bohr magneton \(\mu_{B}\equiv e\hbar/2m_{e}\approx5.788\times10^{-11}\ \mathrm{MeV\;T}^{-1}\). The degrees of freedom (dof.) \(\mathfrak{g}=n_{S}\times n_{C}\) is the number of spin \(n_\mathrm{S}\) and color \(n_\mathrm{C}\) states available to the particle. We evaluate the magneton with gyromagnetic factor \(g=2\), while strong interaction corrections suggest a larger value for quarks. For each particle seen in Table~\ref{tab:particle_properties}, there is an antiparticle with opposite sign of magnetic moment. 
 \begin{table}[h]
 \centering
 \caption{Properties of select particles}
@@ -145,27 +155,54 @@ Charm \((c)\) & 1270 & \(+2/3\) & \(+0.000268\) & 6 \\
 
 The electron-positron and light-quark gases, especially up-quarks, are the magnetically most relevant particles in the QGP epoch due to their charge and low mass. The up-quark content is comparable to that of electrons since both are very relativistic particles considering \(k_{B}T=300\,\mathrm{MeV}\gg m_i c^{2}\). Their number densities \(n_{i}\) would then follow a massless fermion gas given by
 \begin{align}
+\label{eq:NumberDensity}
 n_{i}(T) = \mathfrak{g}_{i}\frac{3}{4}\frac{\zeta(3)}{\pi^{2}}\left(\frac{k_{B}T}{\hbar c}\right)^{3}\,,
 \end{align}
-where \(\zeta(3)\approx1.202\) is the Riemann-Zeta function. The ratio of contribution to magnetism from light-quarks compared to leptons is thus solely rooted in their comparable magnetic moment and greater degeneracy. The estimated total cosmic magnetic flux strength is therefore derived from the sum of external flux density, and the medium polarization of the most magnetically active particles \((i)\) and antiparticles \((\bar{i})\), given by
+where \(\zeta(3)\approx1.202\) is the Riemann-Zeta function. The ratio of contribution to magnetism from light-quarks compared to leptons is thus solely rooted in their comparable magnetic moment and greater degeneracy. 
+
+The estimated total cosmic magnetic flux strength is therefore derived from the sum of external flux density, and the medium polarization of the most magnetically active particles \((i)\) and antiparticles \((\bar{i})\), given by
 \begin{align}
+\label{eq:TotalMagnetization}
 \mathcal{B}_\mathrm{total}=\mathcal{B}_\mathrm{ext.}+\mu_{0}\sum_{i} M_{i\bar{i}}\,,
 \end{align}
-where \(M=\mathcal{M}/V\) is the magnetic moment density, \(\mathcal{M}\) is the magnetization, and \(\mu_{0}\) is the vacuum permeability (not to be confused with magnetic moment). Therefore at \(k_{B}T=300~\mathrm{MeV}\) for up-quark and electrons, we obtain as an upper bound
+where \(M=\mathcal{M}/V\) is the magnetic moment density, \(\mathcal{M}\) is the magnetization, and \(\mu_{0}\) is the vacuum permeability (not to be confused with magnetic moment). {\color{blue}Therefore at \(k_{B}T=300~\mathrm{MeV}\), and using \req{eq:NumberDensity} and \req{eq:TotalMagnetization}, we obtain an upper bound for the up-quark contribution to magnetic field strength
 \begin{align}
-\label{eq:estimate}
-\mu_{0}M_{u\bar{u}}\vert_{T=300\MeV} = \mu_{0}\mathcal{M}_{u\bar{u}}/V = \mu_{0}\mu_{u}(n_{u}+n_{\bar{u}}) \simeq 6.958\times10^{15}~\mathrm{T} \,,\qquad
-M_{e\bar{e}}=M_{u\bar{u}}\frac{\mathfrak{g}_{e}}{\mathfrak{g}_{u}} \frac{\mu_{e}}{\mu_{u}} \simeq 2.15 M_{u\bar{u}}\,.
+\label{eq:QuarkMagnetization}
+\mathcal{B}_{u\bar{u}}(T)<\mu_{0}\mu_{u}(n_{u}(T)+n_{\bar{u}}(T))=\mu_{0}\mu_{u}\mathfrak{g}_{u}\frac{6}{4}\frac{\zeta(3)}{\pi^{2}}\left(\frac{k_{B}T}{\hbar c}\right)^{3}\,,
 \end{align}
-The estimate presented in \req{eq:estimate}, assumes that all strongly interacting quark magnetic moments align in a suitable manner with the electron generated magnetic field to amplify it further. This type of ferromagnetic alignment amplifies the lepton generated magnetization \(\sim 10^{6}\) times the critical magnetic field strength \(\mathcal{B}_\mathrm{C}\equiv m_{e}^{2}c^{2}/e\hbar\approx 4.41\times10^{9}\ \mathrm{T}\). This is comparable to the estimated maximum stellar core magnetic field strength within magnetars~\cite{Ferrer:2010wz} and \(\sim 10^{4}\) times stronger than their estimated surface field strength~\cite{Kaspi:2017fwg}.
+which we evaluate at \(T=300~\mathrm{MeV}\) to obtain
+\begin{equation}
+\label{eq:estimate}
+\mathcal{B}_{u\bar{u}}(300\MeV) < 7\times10^{15}~\mathrm{T} \,.
+\end{equation}
+The electron contribution is comparable to the up-quark contribution via the ratio of degrees of freedom and the magnetic moment size
+\begin{align}
+\label{eq:ElectronMagnetization}
+&\mathcal{B}_{e\bar{e}} = \mathcal{B}_{u\bar{u}}\frac{\mathfrak{g}_{e}}{\mathfrak{g}_{u}} \frac{\mu_{e}}{\mu_{u}} \simeq 2.15 \mathcal{B}_{u\bar{u}}\,,\\
+\label{eq:ElectronEstimate}
+&\mathcal{B}_{e\bar{e}}(300\MeV) < 1.5\times10^{16}~\mathrm{T}\,.
+\end{align}
+The value presented in \req{eq:estimate} and \req{eq:ElectronEstimate}, is an estimate that assumes} that all strongly interacting quark and electron magnetic moments align in a suitable manner with the electron generated magnetic field to amplify it further. This maximum of ferromagnetic alignment amplifies the lepton generated magnetization \(\sim 10^{6}\) times the critical magnetic field strength \(\mathcal{B}_\mathrm{C}\equiv m_{e}^{2}c^{2}/e\hbar\approx 4.41\times10^{9}\ \mathrm{T}\). This is comparable to the estimated maximum stellar core magnetic field strength within magnetars~\cite{Ferrer:2010wz} and \(\sim 10^{4}\) times stronger than their estimated surface field strength~\cite{Kaspi:2017fwg}.
+
+{\color{blue}These estimated values for the magnetic field strength should not however be taken to be realistic. The actual magnetization of quarks and leptons is likely much weaker due to the high temperatures of the cosmic plasma which tends to disrupt the necessary alignment required for magnetization. It is then of interest the determine the minimum fraction \(f(T)\) of aligned fermions needed to account for the primordial magnetic field. If we take the ratio of the lower-bound of the PMF (see \rf{Figure_1}) and the upper-limit magnetization in \req{eq:QuarkMagnetization}, we can estimate the required fraction of aligned fermions
+\begin{equation}
+\label{eq:FractionAligned}
+f(T) = \frac{\mathcal{B}_{\rm PMF}(T)}{\mathcal{B}_{i\bar{i}}} 
+= \frac{4}{3}\frac{\pi^{2}}{\xi(3)}\frac{\mathcal{B}_{0}}{\mu_{0}\mu_{i}\mathfrak{g}_{i}}\left(\frac{\hbar^{3}c^{3}}{T_{0}^{2}T}\right)\propto\frac{1}{T}\,.
+\end{equation}
+
+
+}
+
+
 
 This discussion suggests that even a weakly polarized (pico-scale) primordial lepton-quark Fermi gas would have had a significant impact on the early Universe consistent with contemporary cosmic magnetism, as shown in Fig.~\ref{Figure_1}, with light-quarks contributing on par with leptons. While leptons remain dominant (within about a factor of 2), they are not the sole source of Fermi spin magnetization. We provide a theoretical outline and point to where future efforts may be directed in the sections below. For recent work on spin polarization modeled in relativistic hydrodynamics, see Refs.~\cite{Florkowski:2024cif,Bhadury:2024whs,Becattini:2024uha,Singh:2024cub}.
 
 %%%%%%%%%%%%%%%%%%%%%%%%
-\section{Magnetization of a polarized gas}
+{\color{blue}\section{Theory of a polarized gas}
 \label{sec:magnetization}
 %%%%%%%%%%%%%%%%%%%%%%%%
-We consider a free but magnetized fermion gas in the temperature range \(500\MeV>T\gtrsim150\MeV\) composed of light-quark species \(q \in {u,d}\) and electrons (and their antiparticles). As the magneton scales with \(\mu \propto 1/m\), these species are magnetically the most relevant due to their lighter masses (see Table~\ref{tab:particle_properties}) and consequently larger magnetic moments. For relativistic species under the conditions of thermal and chemical equilibrium~\cite{Elze:1980er}, as was the case in the primordial Universe, the chemical potential \(\eta\) of each particle is opposite in sign to that of its antiparticle
+Given the estimates presented in \rsec{sec:introduction}, we work towards a more realistic theory of fermion spin magnetization.} We consider a free but magnetized fermion gas in the temperature range \(500\MeV>T\gtrsim150\MeV\) composed of light-quark species \(q \in {u,d}\) and electrons (and their antiparticles). As the magneton scales with \(\mu \propto 1/m\), these species are magnetically the most relevant due to their lighter masses (see Table~\ref{tab:particle_properties}) and consequently larger magnetic moments. For relativistic species under the conditions of thermal and chemical equilibrium~\cite{Elze:1980er}, as was the case in the primordial Universe, the chemical potential \(\eta\) of each particle is opposite in sign to that of its antiparticle
 \begin{align}
 \label{eq:equilibirum_conditions}
 \eta_{q}=T\ln\lambda_{q}\,,\qquad
@@ -204,7 +241,7 @@ We recognize that \req{eq:dipole2} contains terms representing asymmetry in the 
 -|\mu_{d}|(\delta_{d}^{\uparrow}-\delta_{d}^{\downarrow})
 -|\mu_{e}|(\delta_{e}^{\uparrow}-\delta_{e}^{\downarrow})\,.
 \end{align}
-The net spin-asymmetry is the asymmetry of particles and antiparticles of the same spin. Therefore $\delta_{u}^{\uparrow}\neq0$ represents a situation where there are more up quarks than up antiquarks in the spin-up $\uparrow$ state.
+The net spin-asymmetry is the asymmetry of particles and antiparticles of the same spin. Therefore $\delta_{u}^{\uparrow}\neq0$ represents a situation where there are more up-quarks than up-antiquarks in the spin-up $\uparrow$ state.
 
 %%%%%%%%%%%%%%%%%%%%%%%%
 \section{Magnetized grand partition function}
