@@ -8,8 +8,10 @@ B0_low = 1e-20       # Lower end of today's intergalactic magnetic field (Tesla)
 B0_high = 1e-12      # Upper end (Tesla)
 B_critical = 4.41e9  # Schwinger critical field in Tesla
 
-# Quark magnetization constant at 300 MeV
+# Particle magnetization constant at 300 MeV
 Bq_300 = 6.958e15    # Tesla at T = 300 MeV
+Bmu_300 = 7.242e13   # Tesla at T = 300 MeV
+Bs_300 = 7.946e13    # Tesla at T = 300 MeV
 
 # Temperature range in MeV; we'll use 500 points between 50 and 500 MeV.
 T_MeV = np.linspace(50, 500, 1000)
@@ -26,6 +28,7 @@ B_high = B0_high * (T_eV**2) / (T0**2)
 mask_orig = T_MeV >= 170
 T_quark_orig = T_MeV[mask_orig]
 B_q_orig = Bq_300 / (300**3) * T_quark_orig**3
+B_s_orig = Bs_300 / (300**3) * T_quark_orig**3
 
 # 2. For the transition region 150 MeV <= T < 170 MeV:
 mask_trans = (T_MeV >= 150) & (T_MeV < 170)
@@ -33,10 +36,12 @@ T_quark_trans = T_MeV[mask_trans]
 # f(T) = (T - 150)/20, which linearly scales from 0 at 150 MeV to 1 at 170 MeV.
 f = (T_quark_trans - 150) / 20
 B_q_trans = (Bq_300 / (300**3) * T_quark_trans**3) * f
+B_s_trans = (Bs_300 / (300**3) * T_quark_trans**3) * f
 
 # Compute the electron magnetization over the full temperature range:
 # B_e(T) = 2.15 * B_q(T) where B_q is computed for the full range using the original formula.
 B_e = 2.15 * (Bq_300 / (300**3) * T_MeV**3)
+B_mu = (Bmu_300 / (300**3) * T_MeV**3)
 
 # Create the plot
 fig, ax = plt.subplots(figsize=(10, 6))
@@ -50,14 +55,19 @@ ax.plot(T_MeV, B_high, label=f'$B_0 = {B0_high}$ T', color='black')
 
 # Plot the quark magnetization curves:
 # - The original curve for T >= 170 MeV (red solid line)
-ax.plot(T_quark_orig, B_q_orig, label=r'$B_q(T)$ for $T \geq 170$ MeV', 
+ax.plot(T_quark_orig, B_q_orig, label=r'$B_u(T)$ for $T \geq 170$ MeV', 
         color='red', linewidth=2)
+ax.plot(T_quark_orig, B_s_orig, label=r'$B_s(T)$ for $T \geq 170$ MeV', 
+        color='orange', linewidth=2)
 # - The transition curve for 150 MeV <= T < 170 MeV (red solid line)
 ax.plot(T_quark_trans, B_q_trans, label=r'$B_q(T)\times\frac{T-150}{20}$ for $150\leq T < 170$ MeV', 
         color='red', linestyle='--', linewidth=2)
+ax.plot(T_quark_trans, B_s_trans, label=r'$B_s(T)\times\frac{T-150}{20}$ for $150\leq T < 170$ MeV', 
+        color='orange', linestyle='--', linewidth=2)
 
 # Plot the electron magnetization curve (for all T)
 ax.plot(T_MeV, B_e, label=r'$B_e(T) = 2.15\,B_q(T)$', color='blue', linewidth=2)
+ax.plot(T_MeV, B_mu, label=r'$B_mu(T)$', color='purple', linewidth=2)
 
 # Plot the horizontal line for the Schwinger critical field
 ax.axhline(y=B_critical, color='black', linestyle='-.', linewidth=1.5,
