@@ -100,10 +100,10 @@ muon     = particle("muon", 105.7, -1, 2)
 tau      = particle("tau", 1776.9, -1, 2)
 
 # Quarks: all quarks use the heavy_quark_number_density with interpolation.
-up       = particle("up", 2.3, 2/3, 6)
-down     = particle("down", 4.8, -1/3, 6)
-strange  = particle("strange", 96.0, -1/3, 6)
-charm    = particle("charm", 1270.0, 2/3, 6)
+up       = particle("up", 2.2, 2/3, 6)
+down     = particle("down", 4.7, -1/3, 6)
+strange  = particle("strange", 95.0, -1/3, 6)
+charm    = particle("charm", 1275.0, 2/3, 6)
 bottom   = particle("bottom", 4180.0, -1/3, 6)
 
 # Temperature range in MeV; 1000 points between 5 and 500 MeV.
@@ -143,6 +143,15 @@ B_down = 2 * MeV2_to_Tesla * mu_B * down.magneton * n_down
 B_strange = 2 * MeV2_to_Tesla * mu_B * strange.magneton * n_strange
 B_charm = 2 * MeV2_to_Tesla * mu_B * charm.magneton * n_charm
 B_bottom = 2 * MeV2_to_Tesla * mu_B * bottom.magneton * n_bottom
+
+print(f"Electron magneton: {electron.magneton:.6f}")
+print(f"Muon magneton: {muon.magneton:.6f}")
+print(f"Tau magneton: {tau.magneton:.6f}")
+print(f"Up quark magneton: {up.magneton:.6f}")
+print(f"Down quark magneton: {down.magneton:.6f}")
+print(f"Strange quark magneton: {strange.magneton:.6f}")
+print(f"Charm quark magneton: {charm.magneton:.6f}")
+print(f"Bottom quark magneton: {bottom.magneton:.6f}")
 
 # --- Plotting ---
 fig, ax = plt.subplots(figsize=(10, 6))
