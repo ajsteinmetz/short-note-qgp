@@ -153,6 +153,41 @@ print(f"Strange quark magneton: {strange.magneton:.6f}")
 print(f"Charm quark magneton: {charm.magneton:.6f}")
 print(f"Bottom quark magneton: {bottom.magneton:.6f}")
 
+# Calculate the sum of all quark magnetizations at T = 300 MeV
+T_val = 300  # Temperature in MeV
+
+# Compute number densities at T = 300 MeV for each quark using heavy_quark_number_density
+n_up_300      = heavy_quark_number_density(up.mass, T_val, up.degeneracy)
+n_down_300    = heavy_quark_number_density(down.mass, T_val, down.degeneracy)
+n_strange_300 = heavy_quark_number_density(strange.mass, T_val, strange.degeneracy)
+n_charm_300   = heavy_quark_number_density(charm.mass, T_val, charm.degeneracy)
+n_bottom_300  = heavy_quark_number_density(bottom.mass, T_val, bottom.degeneracy)
+
+# Calculate the magnetization for each quark at T = 300 MeV
+B_up_300      = 2 * MeV2_to_Tesla * mu_B * up.magneton * n_up_300
+B_down_300    = 2 * MeV2_to_Tesla * mu_B * down.magneton * n_down_300
+B_strange_300 = 2 * MeV2_to_Tesla * mu_B * strange.magneton * n_strange_300
+B_charm_300   = 2 * MeV2_to_Tesla * mu_B * charm.magneton * n_charm_300
+B_bottom_300  = 2 * MeV2_to_Tesla * mu_B * bottom.magneton * n_bottom_300
+
+# Sum all quark magnetizations
+B_quarks_sum_300 = B_up_300 + B_down_300 + B_strange_300 + B_charm_300 + B_bottom_300
+
+print("Sum of quark magnetizations at T = 300 MeV:", B_quarks_sum_300)
+
+# Calculate the lepton magnetizations at T = 300 MeV
+n_electron_300 = boltzmann_number_density(electron.mass, T_val, electron.degeneracy)
+n_muon_300     = boltzmann_number_density(muon.mass, T_val, muon.degeneracy)
+n_tau_300      = boltzmann_number_density(tau.mass, T_val, tau.degeneracy)
+
+B_electron_300 = 2 * MeV2_to_Tesla * mu_B * electron.magneton * n_electron_300
+B_muon_300     = 2 * MeV2_to_Tesla * mu_B * muon.magneton * n_muon_300
+B_tau_300      = 2 * MeV2_to_Tesla * mu_B * tau.magneton * n_tau_300
+
+# Sum all lepton magnetizations at T = 300 MeV and print the result
+B_leptons_sum_300 = B_electron_300 + B_muon_300 + B_tau_300
+print("Sum of lepton magnetizations at T = 300 MeV:", B_leptons_sum_300)
+
 # --- Plotting ---
 fig, ax = plt.subplots(figsize=(10, 6))
 
