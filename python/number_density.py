@@ -1,3 +1,4 @@
+from turtle import back
 import numpy as np
 import matplotlib.pyplot as plt
 import matplotlib.ticker as ticker
@@ -87,6 +88,7 @@ def heavy_quark_number_density(m, T, g, num_terms=10):
 # Constants and conversion factors
 T0 = 2.35e-4             # Today's CMB temperature in eV
 B0_low = 1e-20           # Lower end of today's intergalactic magnetic field (Tesla)
+B0_mid = 1e-15           # Middle of today's intergalactic magnetic field (Tesla) from Jedamzik et. al. 2025.
 B0_high = 1e-12          # Upper end (Tesla)
 B_critical = 4.41e9      # Schwinger critical field in Tesla
 MeV2_to_Tesla = 5.122e9  # Conversion factor from (MeV)² to Tesla
@@ -115,6 +117,7 @@ T_eV = T_MeV * 1e6  # Convert temperature from MeV to eV
 # Compute the primordial magnetic field using the scaling law:
 # B_PMF(T) = B0 * (T²)/(T0²)
 B_low = B0_low * (T_eV**2) / (T0**2)
+B_mid = B0_mid * (T_eV**2) / (T0**2)
 B_high = B0_high * (T_eV**2) / (T0**2)
 
 # --- Compute magnetizations ---
@@ -193,6 +196,7 @@ fig, ax = plt.subplots(figsize=(10, 6))
 
 # Shade the region between the lower and upper bounds for the primordial magnetic field.
 ax.fill_between(T_MeV, B_low, B_high, color='lightgrey', alpha=1.0, label='Allowed PMF range')
+ax.fill_between(T_MeV, 0.5*B_mid, B_mid, color='gold', alpha=1.0, label='Jedamzik et. al. (2025)')
 # Add a vertical line at T = 150 MeV to indicate the start of the transition region,
 ax.axvline(x=150, color='green', linestyle='-', linewidth=1.0, alpha=1.0, label=r'$T=150\,\mathrm{MeV}$')
 
