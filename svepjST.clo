@@ -210,7 +210,7 @@
 %
 \def\epjabstract#1{\gdef\@abstract{#1}}
 %
-\def\epjrunnhead{\markboth{Short note on spin magnetization in QGP}{A.\ Steinmetz,\ J.\ Rafelski}}%
+\def\epjrunnhead{\markboth{Short Note on Spin Magnetization in QGP}{A.\ Steinmetz,\ J.\ Rafelski}}%
 %
 \AtEndOfClass{\let\ackname\@empty
 \let\if@runhead\iftrue
