@@ -33,6 +33,35 @@ C.~Grayson, C.T. Yang, M.~Formanek, J.~Rafelski, {Self-consistent Strong
 \newblock {\href{https://arxiv.org/abs/2406.13055}{{arXiv:2406.13055}}}
   {[nucl-th]}
 
+\bibitem{Pomakov:2022cem}
+V.P. {Pomakov}, S.P. {O'Sullivan}, M.~{Br{\"u}ggen}, F.~{Vazza}, E.~{Carretti},
+  G.H. {Heald}, C.~{Horellou}, T.~{Shimwell}, A.~{Shulevski}, T.~{Vernstrom},
+  {The redshift evolution of extragalactic magnetic fields}.
+\newblock Monthly Notices of the Royal Astronomical Society \textbf{515}(1),
+  256--270 (2022).
+\newblock \doi{10.1093/mnras/stac1805}
+
+\bibitem{Neronov:2010gir}
+A.~Neronov, I.~Vovk, Evidence for strong extragalactic magnetic fields from
+  fermi observations of tev blazars.
+\newblock Science \textbf{328}(5974), 73--75 (2010).
+\newblock \doi{10.1126/science.1184192}
+
+\bibitem{Jedamzik:2025cax}
+K.~Jedamzik, L.~Pogosian, T.~Abel, {Hints of Primordial Magnetic Fields at
+  Recombination and Implications for the Hubble Tension}.
+\newblock arXiv preprint  (2025).
+\newblock {\href{https://arxiv.org/abs/2503.09599}{{arXiv:2503.09599}}}
+  {[astro-ph.CO]}
+
+\bibitem{Pshirkov:2015tua}
+M.S. Pshirkov, P.G. Tinyakov, F.R. Urban, {New limits on extragalactic magnetic
+  fields from rotation measures}.
+\newblock Phys. Rev. Lett. \textbf{116}(19), 191302 (2016).
+\newblock \doi{10.1103/PhysRevLett.116.191302}.
+\newblock {\href{https://arxiv.org/abs/1504.06546}{{arXiv:1504.06546}}}
+  {[astro-ph.CO]}
+
 \bibitem{Planck:2015zrl}
 P.A.R. Ade, et~al., {Planck 2015 results. XIX. Constraints on primordial
   magnetic fields}.
@@ -49,6 +78,21 @@ K.~Jedamzik, A.~Saveliev, {Stringent Limit on Primordial Magnetic Fields from
 \newblock {\href{https://arxiv.org/abs/1804.06115}{{arXiv:1804.06115}}}
   {[astro-ph.CO]}
 
+\bibitem{Banerjee:2004df}
+R.~Banerjee, K.~Jedamzik, {The Evolution of cosmic magnetic fields: From the
+  very early universe, to recombination, to the present}.
+\newblock Phys. Rev. D \textbf{70}, 123003 (2004).
+\newblock \doi{10.1103/PhysRevD.70.123003}.
+\newblock
+  {\href{https://arxiv.org/abs/astro-ph/0410032}{{arXiv:astro-ph/0410032}}}
+
+\bibitem{Jedamzik:1996wp}
+K.~Jedamzik, V.~Katalinic, A.V. Olinto, {Damping of cosmic magnetic fields}.
+\newblock Phys. Rev. D \textbf{57}, 3264--3284 (1998).
+\newblock \doi{10.1103/PhysRevD.57.3264}.
+\newblock
+  {\href{https://arxiv.org/abs/astro-ph/9606080}{{arXiv:astro-ph/9606080}}}
+
 \bibitem{Fromerth:2012fe}
 M.J. Fromerth, I.~Kuznetsova, L.~Labun, J.~Letessier, J.~Rafelski, {From
   Quark-Gluon Universe to Neutrino Decoupling:
@@ -57,6 +101,17 @@ M.J. Fromerth, I.~Kuznetsova, L.~Labun, J.~Letessier, J.~Rafelski, {From
 \newblock \doi{10.5506/APhysPolB.43.2261}.
 \newblock {\href{https://arxiv.org/abs/1211.4297}{{arXiv:1211.4297}}}
   {[nucl-th]}
+
+\bibitem{Hagedorn:1967dia}
+R.~Hagedorn, {On the hadronic mass spectrum}.
+\newblock Nuovo Cim. A \textbf{52}(4), 1336--1340 (1967).
+\newblock \doi{10.1007/BF02755235}
+
+\bibitem{Rafelski:2015xej}
+J.~Rafelski (ed.), \emph{{Melting Hadrons, Boiling Quarks - From Hagedorn
+  Temperature to Ultra-Relativistic Heavy-Ion Collisions at CERN. With a
+  Tribute to Rolf Hagedorn}} (Springer, 2016).
+\newblock \doi{10.1007/978-3-319-17545-4}
 
 \bibitem{Rafelski:2019twp}
 J.~Rafelski, {Discovery of Quark-Gluon-Plasma: Strangeness Diaries}.
@@ -79,6 +134,11 @@ J.~Rafelski, J.~Birrell, C.~Grayson, A.~Steinmetz, C.T. Yang, {Quarks to
 \newblock (In Press EPJ ST)  (2024).
 \newblock {\href{https://arxiv.org/abs/2409.19031}{{arXiv:2409.19031}}}
   {[hep-ph]}
+
+\bibitem{ParticleDataGroup:2022pth}
+R.L. Workman, et~al., {Review of Particle Physics}.
+\newblock PTEP \textbf{2022}, 083C01 (2022).
+\newblock \doi{10.1093/ptep/ptac097}
 
 \bibitem{Letessier:2005qe}
 J.~Letessier, J.~Rafelski, {Hadron production and phase changes in relativistic
@@ -170,6 +230,25 @@ G.S. Bali, F.~Bruckmann, G.~Endrodi, Z.~Fodor, S.D. Katz, S.~Krieg, A.~Schafer,
 \newblock {\href{https://arxiv.org/abs/1111.4956}{{arXiv:1111.4956}}}
   {[hep-lat]}
 
+\bibitem{Letessier:2002ony}
+J.~Letessier, J.~Rafelski, \emph{Hadrons and Quark–Gluon Plasma}.
+\newblock Cambridge Monographs on Particle Physics, Nuclear Physics and
+  Cosmology (Cambridge University Press, Cambridge, UK, 2023).
+\newblock \doi{10.1017/9781009290753}.
+\newblock \emph{Open access.} [eBook. Orig. pub. 2002]
+
+\bibitem{Yang:2024ret}
+C.T. Yang, {Elementary Particles and Plasma in the First Hour of the Early
+  Universe}.
+\newblock Ph.D. thesis, Arizona U. (2024).
+\newblock HDL:\href{https://hdl.handle.net/10150/670280}{10150/670280}
+  \href{https://arxiv.org/abs/2401.09653}{arXiv:2401.09653} [hep-ph]
+
+\bibitem{ParticleDataGroup:2024cfk}
+S.~Navas, et~al., {Review of particle physics}.
+\newblock Phys. Rev. D \textbf{110}(3), 030001 (2024).
+\newblock \doi{10.1103/PhysRevD.110.030001}
+
 \bibitem{Ferrer:2010wz}
 E.J. Ferrer, V.~de~la Incera, J.P. Keith, I.~Portillo, P.L. Springsteen,
   {Equation of State of a Dense and Magnetized Fermion System}.
@@ -184,6 +263,60 @@ V.M. Kaspi, A.~Beloborodov, {Magnetars}.
 \newblock \doi{10.1146/annurev-astro-081915-023329}.
 \newblock {\href{https://arxiv.org/abs/1703.00068}{{arXiv:1703.00068}}}
   {[astro-ph.HE]}
+
+\bibitem{Elze:1980er}
+H.T. Elze, W.~Greiner, J.~Rafelski, {The relativistic Fermi gas revisited}.
+\newblock J. Phys. G \textbf{6}, L149--L153 (1980).
+\newblock \doi{10.1088/0305-4616/6/9/003}
+
+\bibitem{Colladay:1996iz}
+D.~Colladay, V.A. Kostelecky, {CPT violation and the standard model}.
+\newblock Phys. Rev. D \textbf{55}, 6760--6774 (1997).
+\newblock \doi{10.1103/PhysRevD.55.6760}.
+\newblock {\href{https://arxiv.org/abs/hep-ph/9703464}{{arXiv:hep-ph/9703464}}}
+
+\bibitem{Bluhm:1997ci}
+R.~Bluhm, V.A. Kostelecky, N.~Russell, {Testing CPT with anomalous magnetic
+  moments}.
+\newblock Phys. Rev. Lett. \textbf{79}, 1432--1435 (1997).
+\newblock \doi{10.1103/PhysRevLett.79.1432}.
+\newblock {\href{https://arxiv.org/abs/hep-ph/9707364}{{arXiv:hep-ph/9707364}}}
+
+\bibitem{BASE:2016yuo}
+C.~Smorra, et~al., {A parts-per-billion measurement of the antiproton magnetic
+  moment}.
+\newblock Nature \textbf{550}(7676), 371--374 (2017).
+\newblock \doi{10.1038/nature24048}
+
+\bibitem{Iwazaki:2005nr}
+A.~Iwazaki, {Color ferromagnetism of quark matter: A Possible origin of strong
+  magnetic field in magnetars}.
+\newblock Phys. Rev. D \textbf{72}, 114003 (2005).
+\newblock \doi{10.1103/PhysRevD.72.114003}.
+\newblock {\href{https://arxiv.org/abs/hep-ph/0508219}{{arXiv:hep-ph/0508219}}}
+
+\bibitem{Miransky:2015ava}
+V.A. Miransky, I.A. Shovkovy, {Quantum field theory in a magnetic field: From
+  quantum chromodynamics to graphene and Dirac semimetals}.
+\newblock Phys. Rept. \textbf{576}, 1--209 (2015).
+\newblock \doi{10.1016/j.physrep.2015.02.003}.
+\newblock {\href{https://arxiv.org/abs/1503.00732}{{arXiv:1503.00732}}}
+  {[hep-ph]}
+
+\bibitem{Birrell:2014ona}
+J.~Birrell, {Non-Equilibrium Aspects of Relic Neutrinos: From Freeze-out to the
+  Present Day}.
+\newblock Ph.D. thesis, Arizona U. (2014).
+\newblock HDL:\href{https://hdl.handle.net/10150/322969}{10150/322969}
+  \href{https://arxiv.org/abs/1409.4500}{arXiv:1409.4500} [nucl-th]
+
+\bibitem{Bali:2014kia}
+G.S. Bali, F.~Bruckmann, G.~Endr\"odi, S.D. Katz, A.~Sch\"afer, {The QCD
+  equation of state in background magnetic fields}.
+\newblock JHEP \textbf{08}, 177 (2014).
+\newblock \doi{10.1007/JHEP08(2014)177}.
+\newblock {\href{https://arxiv.org/abs/1406.0269}{{arXiv:1406.0269}}}
+  {[hep-lat]}
 
 \bibitem{Florkowski:2024cif}
 W.~Florkowski, \emph{{Spin hydrodynamics}}, in \emph{EMMI Workshop - Aspects of
@@ -213,52 +346,6 @@ S.K. Singh, R.~Ryblewski, W.~Florkowski, {Spin dynamics with realistic
 \newblock {\href{https://arxiv.org/abs/2411.08223}{{arXiv:2411.08223}}}
   {[hep-ph]}
 
-\bibitem{Elze:1980er}
-H.T. Elze, W.~Greiner, J.~Rafelski, {The relativistic Fermi gas revisited}.
-\newblock J. Phys. G \textbf{6}, L149--L153 (1980).
-\newblock \doi{10.1088/0305-4616/6/9/003}
-
-\bibitem{Colladay:1996iz}
-D.~Colladay, V.A. Kostelecky, {CPT violation and the standard model}.
-\newblock Phys. Rev. D \textbf{55}, 6760--6774 (1997).
-\newblock \doi{10.1103/PhysRevD.55.6760}.
-\newblock {\href{https://arxiv.org/abs/hep-ph/9703464}{{arXiv:hep-ph/9703464}}}
-
-\bibitem{Bluhm:1997ci}
-R.~Bluhm, V.A. Kostelecky, N.~Russell, {Testing CPT with anomalous magnetic
-  moments}.
-\newblock Phys. Rev. Lett. \textbf{79}, 1432--1435 (1997).
-\newblock \doi{10.1103/PhysRevLett.79.1432}.
-\newblock {\href{https://arxiv.org/abs/hep-ph/9707364}{{arXiv:hep-ph/9707364}}}
-
-\bibitem{BASE:2016yuo}
-C.~Smorra, et~al., {A parts-per-billion measurement of the antiproton magnetic
-  moment}.
-\newblock Nature \textbf{550}(7676), 371--374 (2017).
-\newblock \doi{10.1038/nature24048}
-
-\bibitem{Yang:2024ret}
-C.T. Yang, {Elementary Particles and Plasma in the First Hour of the Early
-  Universe}.
-\newblock Ph.D. thesis, Arizona U. (2024).
-\newblock HDL:\href{https://hdl.handle.net/10150/670280}{10150/670280}
-  \href{https://arxiv.org/abs/2401.09653}{arXiv:2401.09653} [hep-ph]
-
-\bibitem{Birrell:2014ona}
-J.~Birrell, {Non-Equilibrium Aspects of Relic Neutrinos: From Freeze-out to the
-  Present Day}.
-\newblock Ph.D. thesis, Arizona U. (2014).
-\newblock HDL:\href{https://hdl.handle.net/10150/322969}{10150/322969}
-  \href{https://arxiv.org/abs/1409.4500}{arXiv:1409.4500} [nucl-th]
-
-\bibitem{Bali:2014kia}
-G.S. Bali, F.~Bruckmann, G.~Endr\"odi, S.D. Katz, A.~Sch\"afer, {The QCD
-  equation of state in background magnetic fields}.
-\newblock JHEP \textbf{08}, 177 (2014).
-\newblock \doi{10.1007/JHEP08(2014)177}.
-\newblock {\href{https://arxiv.org/abs/1406.0269}{{arXiv:1406.0269}}}
-  {[hep-lat]}
-
 \bibitem{Steinmetz:2018ryf}
 A.~Steinmetz, M.~Formanek, J.~Rafelski, {Magnetic Dipole Moment in Relativistic
   Quantum Mechanics}.
@@ -274,5 +361,17 @@ J.~Birrell, M.~Formanek, A.~Steinmetz, C.T. Yang, J.~Rafelski, {Fermi-Dirac
 \newblock \doi{10.1007/s10773-024-05695-8}.
 \newblock {\href{https://arxiv.org/abs/2405.05287}{{arXiv:2405.05287}}}
   {[cond-mat.quant-gas]}
+
+\bibitem{Johnson:1975zp}
+K.~Johnson, {The M.I.T. Bag Model}.
+\newblock {Acta Phys. Polon. B} \textbf{6}, 865 (1975).
+\newblock {URL:
+  \href{https://www.actaphys.uj.edu.pl/R/6/11/865}{https://www.actaphys.uj.edu.pl/R/6/11/865}}
+
+\bibitem{DeGrand:1975cf}
+T.A. DeGrand, R.L. Jaffe, K.~Johnson, J.E. Kiskis, {Masses and Other Parameters
+  of the Light Hadrons}.
+\newblock Phys. Rev. D \textbf{12}, 2060 (1975).
+\newblock \doi{10.1103/PhysRevD.12.2060}
 
 \end{thebibliography}
