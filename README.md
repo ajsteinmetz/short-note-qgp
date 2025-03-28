@@ -26,7 +26,7 @@ style="width: 1em; margin-inline-start: 0.5em"
 alt="ORCID iD icon"/> Johann Rafelski</a>
 
 ## cite as
-Steinmetz, A. & Rafelski, J. Short Note on Spin Magnetization in QGP. <i>Submitted to EPJ ST</i> (2025). <a href="https://doi.org/10.48550/arXiv.2502.05052">10.48550/arXiv.2502.05052</a>
+Steinmetz, A., Rafelski, J. Short Note on Spin Magnetization in QGP. <i>Submitted to EPJ ST</i> (2025). <a href="https://doi.org/10.48550/arXiv.2502.05052">10.48550/arXiv.2502.05052</a>
 
 ## doi/arXiv
 - https://doi.org/10.48550/arXiv.2502.05052
