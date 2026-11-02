@@ -1,0 +1,11 @@
+Copyright (c) 2025 Andrew Steinmetz, Johann Rafelski. All rights reserved.
+
+This repository holds the authors' own version of "Short note on spin magnetization in QGP",
+published at https://doi.org/10.1140/epjs/s11734-025-01625-9. The version of record is
+© 2025 The Author(s), under exclusive licence to EDP Sciences, Springer-Verlag GmbH Germany, part of Springer Nature.
+
+No license is granted to copy, modify or redistribute the manuscript
+source or figures in this repository without the authors' permission.
+
+The scripts in mathematica/ and python/ are licensed separately under the MIT License;
+see the LICENSE file in each of those folders.
